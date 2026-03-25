@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <Section id="boutique" className="grid md:grid-cols-2 gap-16 items-center bg-white dark:bg-black transition-colors duration-500 relative overflow-hidden">
+    <Section id="boutique" className="grid md:grid-cols-2 gap-12 md:gap-16 items-center bg-duck-egg dark:bg-charcoal transition-colors duration-500 relative overflow-hidden">
 
       {/* Storytelling Ambient Background */}
-      <div className="absolute -right-20 -bottom-20 w-1/2 h-full opacity-0 dark:opacity-20 pointer-events-none">
+      <div className="absolute -right-20 -bottom-20 w-1/2 h-full opacity-0 dark:opacity-10 pointer-events-none">
         <Image
           src="/about-cinematic.png"
           alt="Salon Interior Detail"
@@ -24,17 +24,17 @@ export default function About() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="space-y-8 relative z-10"
+        className="space-y-6 md:space-y-8 relative z-10"
       >
         <div className="space-y-4">
-          <h2 className="text-3xl md:text-4xl font-light uppercase tracking-wide dark:text-white">Our Boutique</h2>
-          <div className="w-12 h-[1px] bg-black dark:bg-luxury-gold" />
+          <h2 className="text-3xl md:text-5xl font-light uppercase tracking-wide text-charcoal dark:text-white">Our Boutique</h2>
+          <div className="w-12 h-[1px] bg-charcoal dark:bg-luxury-gold" />
         </div>
-        <p className="text-gray-600 dark:text-gray-300 font-light leading-relaxed text-lg text-balance">
+        <p className="text-charcoal/80 dark:text-gray-300 font-light leading-relaxed text-base md:text-lg text-pretty">
           Step inside our stunning boutique for an unrivalled bridal experience.
           Our surroundings within the historic and beautiful Tannery Building of St Andrews Square are chic and elegant, yet always relaxed to reflect our own personal style.
         </p>
-        <p className="text-gray-600 dark:text-gray-300 font-light leading-relaxed text-lg text-balance">
+        <p className="text-charcoal/80 dark:text-gray-300 font-light leading-relaxed text-base md:text-lg text-pretty">
           At your appointment enjoy a glass of fizz and a chat sharing your bridal vision with us.
           Browse our hand picked selection of gowns from some of the most creative designers and take your time to settle in.
         </p>
@@ -44,7 +44,7 @@ export default function About() {
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="relative aspect-[3/4] bg-luxury-gray dark:bg-gray-900 border border-gray-100 dark:border-white/10 shadow-2xl overflow-hidden group"
+        className="relative aspect-[3/4] bg-white dark:bg-gray-900 border border-white/20 shadow-2xl overflow-hidden group"
       >
         <Image
           src="https://bridalcourtyard.com/wp-content/uploads/2022/09/WINDOW-683x1024.jpg"

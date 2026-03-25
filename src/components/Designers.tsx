@@ -17,7 +17,7 @@ const DESIGNERS = [
 
 export default function Designers() {
   return (
-    <Section id="designers" className="bg-luxury-gray dark:bg-black relative overflow-hidden transition-colors duration-500">
+    <Section id="designers" className="bg-luxury-gray dark:bg-charcoal relative overflow-hidden transition-colors duration-500">
 
       {/* Gallery Detail Cinematic Loop Overlay */}
       <div className="absolute inset-0 z-0">
@@ -32,12 +32,12 @@ export default function Designers() {
       {/* Silk Texture Background */}
       <div className="absolute inset-0 bg-[url('/silk.png')] bg-cover opacity-20 dark:opacity-5 pointer-events-none mix-blend-multiply dark:mix-blend-overlay z-1" />
 
-      <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-light uppercase tracking-wide dark:text-white">Our Designers</h2>
-        <p className="text-gray-500 dark:text-gray-400 font-light">carefully curated for the modern bride</p>
+      <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16 space-y-4 relative z-10">
+        <h2 className="text-3xl md:text-5xl font-light uppercase tracking-wide dark:text-white">Our Designers</h2>
+        <p className="text-gray-500 dark:text-gray-400 font-light text-sm md:text-base">carefully curated for the modern bride</p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8 relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-12 gap-x-8 relative z-10">
         {DESIGNERS.map((designer, index) => (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -59,8 +59,8 @@ export default function Designers() {
                 </div>
               </div>
               <div className="space-y-2 text-center group-hover:text-luxury-gold transition-colors text-black dark:text-white">
-                <h3 className="text-lg font-normal tracking-wide uppercase">{designer.name}</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 font-light px-4">{designer.desc}</p>
+                <h3 className="text-base md:text-lg font-normal tracking-wide uppercase">{designer.name}</h3>
+                <p className="text-xs md:text-sm text-gray-500 dark:text-gray-400 font-light px-4">{designer.desc}</p>
               </div>
             </Link>
           </motion.div>
