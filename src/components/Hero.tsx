@@ -13,34 +13,34 @@ export default function Hero() {
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-charcoal">
         <div className="absolute inset-0 z-0">
           <motion.div
-            initial={{ scale: 1.1 }}
+            initial={{ scale: 1.05 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 10, ease: "easeOut" }}
+            transition={{ duration: 15, ease: "easeOut" }}
             className="relative w-full h-full"
           >
             <Image
-              src="https://images.unsplash.com/photo-1594552072238-b8a33785b6cd?w=2400&q=85"
+              src="https://bridalcourtyard.com/wp-content/uploads/2022/09/JAS_99241-SS23-scaled.jpg"
               alt="Bridal gown editorial photography"
               fill
-              className="object-cover object-[center_top]"
+              className="object-cover object-[center_20%]"
               priority
               loading="eager"
             />
           </motion.div>
-          {/* Elegant gradient overlay for luxury feel */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
+          {/* Flat overlay with specific opacity for clarity */}
+          <div className="absolute inset-0 bg-black/40" />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto text-center px-6">
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h1 className="font-display text-7xl md:text-9xl text-white mb-2 leading-[0.9] tracking-tighter">
+            <h1 className="font-display text-7xl md:text-9xl !text-white mb-2 leading-[0.9] tracking-tighter drop-shadow-sm">
               Confidently
             </h1>
-            <h1 className="font-display text-7xl md:text-9xl text-white mb-8 leading-[0.9] italic tracking-tighter">
+            <h1 className="font-display text-7xl md:text-9xl !text-white mb-8 leading-[0.9] italic tracking-tighter drop-shadow-sm">
               Chic.
             </h1>
           </motion.div>
