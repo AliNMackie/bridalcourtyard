@@ -33,12 +33,22 @@ export default function Contact() {
 
             <div className="space-y-3">
               <p className="font-medium text-xs uppercase tracking-widest text-luxury-gold">Phone</p>
-              <a href="tel:01412378680" className="text-lg hover:text-luxury-gold transition-colors block">0141 237 8680</a>
+              <a 
+                href="tel:01412378680" 
+                className="text-lg text-luxury-gold hover:underline transition-all cursor-pointer block"
+              >
+                0141 237 8680
+              </a>
             </div>
 
             <div className="space-y-3">
               <p className="font-medium text-xs uppercase tracking-widest text-luxury-gold">Email</p>
-              <a href="mailto:info@bridalcourtyard.com" className="text-lg hover:text-luxury-gold transition-colors block">info@bridalcourtyard.com</a>
+              <a 
+                href="mailto:info@bridalcourtyard.com" 
+                className="text-lg text-luxury-gold hover:underline transition-all cursor-pointer block"
+              >
+                info@bridalcourtyard.com
+              </a>
             </div>
 
             <div className="pt-4">

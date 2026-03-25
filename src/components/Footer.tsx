@@ -23,8 +23,18 @@ export default function Footer() {
               Glasgow G1 5PP
             </p>
             <div className="flex flex-col space-y-3">
-              <a href="tel:01412378680" className="text-white hover:text-luxury-gold transition-colors">0141 237 8680</a>
-              <a href="mailto:info@bridalcourtyard.com" className="text-white hover:text-luxury-gold transition-colors">info@bridalcourtyard.com</a>
+              <a 
+                href="tel:01412378680" 
+                className="text-white hover:text-luxury-gold hover:underline transition-all cursor-pointer"
+              >
+                0141 237 8680
+              </a>
+              <a 
+                href="mailto:info@bridalcourtyard.com" 
+                className="text-white hover:text-luxury-gold hover:underline transition-all cursor-pointer"
+              >
+                info@bridalcourtyard.com
+              </a>
             </div>
           </div>
         </div>

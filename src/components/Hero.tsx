@@ -13,15 +13,17 @@ export default function Hero() {
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-charcoal">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2000&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1594552072238-b8a33785b6cd?w=2400&q=85"
             alt="Bridal gown editorial photography"
             fill
-            className="object-cover opacity-75"
+            className="object-cover object-[center_top] opacity-100"
             priority
             loading="eager"
+            width={2400}
+            height={1600}
           />
-          {/* Subtle dark overlay for readability */}
-          <div className="absolute inset-0 bg-black/25" />
+          {/* Increased dark overlay for readability (rgba 0,0,0,0.42) */}
+          <div className="absolute inset-0 bg-black/42" />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
@@ -31,7 +33,7 @@ export default function Hero() {
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-6xl md:text-8xl lg:text-9xl text-white mb-6 leading-tight"
           >
-            Confidently <span className="italic">Chic.</span>
+            Confidently <span className="italic text-white">Chic.</span>
           </motion.h1>
 
           {/* Thin gold rule */}

@@ -25,7 +25,7 @@ export default function Navbar() {
       {/* Announcement Bar - Constant across scroll */}
       <div className="bg-duck-egg w-full py-2 px-4 text-center border-b border-luxury-gold/10">
         <p className="font-body text-[10px] md:text-xs uppercase tracking-[0.15em] text-charcoal">
-          Glasgow&apos;s Premier Bridal Boutique &middot; 48 St Andrew&apos;s Square &middot; <a href="tel:01412378680" className="hover:underline">0141 237 8680</a>
+          Glasgow&apos;s Premier Bridal Boutique &middot; 48 St Andrew&apos;s Square &middot; <a href="tel:01412378680" className="hover:underline hover:text-luxury-gold transition-colors">0141 237 8680</a>
         </p>
       </div>
 
