@@ -33,6 +33,30 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500&display=swap"
           rel="stylesheet"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "The Bridal Courtyard",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "48 St Andrew's Square",
+                "addressLocality": "Glasgow",
+                "postalCode": "G1 5PP",
+                "addressCountry": "GB"
+              },
+              "telephone": "+441412378680",
+              "url": "https://bridalcourtyard.com",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "143"
+              }
+            }),
+          }}
+        />
       </head>
       <body>
         <Navbar />

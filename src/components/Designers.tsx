@@ -17,50 +17,45 @@ const DESIGNERS = [
 
 export default function Designers() {
   return (
-    <Section id="designers" className="bg-luxury-gray dark:bg-charcoal relative overflow-hidden transition-colors duration-500">
+    <Section id="designers" className="bg-white py-24 md:py-32 overflow-hidden border-b border-gray-100">
 
-      {/* Gallery Detail Cinematic Loop Overlay */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/gallery-detail.png"
-          alt="Lace Detail Background"
-          fill
-          className="object-cover opacity-10 dark:opacity-20 animate-breathing"
-        />
+      <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 relative z-10">
+        <span className="eyebrow">Designers</span>
+        <h2 className="text-4xl md:text-5xl font-light uppercase tracking-wide text-charcoal">Our Designers</h2>
+        <div className="w-16 h-[1px] bg-luxury-gold mx-auto mt-6" />
+        <p className="font-body text-charcoal/50 text-sm md:text-base font-light italic mt-4">carefully curated for the modern bride</p>
       </div>
 
-      {/* Silk Texture Background */}
-      <div className="absolute inset-0 bg-[url('/silk.png')] bg-cover opacity-20 dark:opacity-5 pointer-events-none mix-blend-multiply dark:mix-blend-overlay z-1" />
-
-      <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16 space-y-4 relative z-10">
-        <h2 className="text-3xl md:text-5xl font-light uppercase tracking-wide dark:text-white">Our Designers</h2>
-        <p className="text-gray-500 dark:text-gray-400 font-light text-sm md:text-base">carefully curated for the modern bride</p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-12 gap-x-8 relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-6 md:px-12 relative z-10">
         {DESIGNERS.map((designer, index) => (
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
             viewport={{ once: true }}
             key={designer.name}
+            className="group"
           >
-            <Link href="#" className="group block space-y-4 cursor-pointer">
-              <div className="aspect-[3/4] bg-white w-full relative overflow-hidden border border-transparent dark:border-white/10 group-hover:border-luxury-gold transition-colors duration-500 shadow-lg">
+            <Link href="#contact" className="block space-y-6 text-center">
+              <div className="aspect-[3/4] bg-luxury-gray relative overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2 border border-transparent group-hover:border-luxury-gold/30">
                 <Image
                   src={designer.img}
-                  alt={designer.name}
+                  alt={`${designer.name} bridal gown`}
                   fill
-                  className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                  className="object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white font-light uppercase tracking-widest text-sm border border-white px-6 py-3 hover:bg-white hover:text-black transition-colors">View Collection</span>
+                
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-charcoal/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8">
+                  <span className="text-white font-body text-[11px] uppercase tracking-[0.25em] border border-white/40 px-6 py-3 hover:bg-white hover:text-charcoal transition-all">
+                    View Collection
+                  </span>
                 </div>
               </div>
-              <div className="space-y-2 text-center group-hover:text-luxury-gold transition-colors text-black dark:text-white">
-                <h3 className="text-base md:text-lg font-normal tracking-wide uppercase">{designer.name}</h3>
-                <p className="text-xs md:text-sm text-gray-500 dark:text-gray-400 font-light px-4">{designer.desc}</p>
+              
+              <div className="space-y-2 transition-colors duration-300 group-hover:text-luxury-gold">
+                <h3 className="text-base md:text-lg font-display tracking-wide uppercase text-charcoal group-hover:text-luxury-gold">{designer.name}</h3>
+                <p className="text-[13px] text-charcoal/50 font-body font-light px-8 leading-relaxed">{designer.desc}</p>
               </div>
             </Link>
           </motion.div>
