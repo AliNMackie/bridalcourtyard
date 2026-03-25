@@ -1,0 +1,33 @@
+Help on method start_extract in module firecrawl.v2.client:
+
+start_extract(
+    urls: Optional[List[str]] = None,
+    *,
+    prompt: Optional[str] = None,
+    schema: Optional[Dict[str, Any]] = None,
+    system_prompt: Optional[str] = None,
+    allow_external_links: Optional[bool] = None,
+    enable_web_search: Optional[bool] = None,
+    show_sources: Optional[bool] = None,
+    scrape_options: Optional[ForwardRef('ScrapeOptions')] = None,
+    ignore_invalid_urls: Optional[bool] = None,
+    integration: Optional[str] = None,
+    agent: Optional[firecrawl.v2.types.AgentOptions] = None
+) method of firecrawl.v2.client.FirecrawlClient instance
+    Start an extract job (non-blocking).
+
+    Args:
+        urls: URLs to extract from (optional)
+        prompt: Natural-language instruction for extraction
+        schema: Target JSON schema for the output
+        system_prompt: Optional system instruction
+        allow_external_links: Allow hyperlinks in output
+        enable_web_search: Whether to augment with web search
+        show_sources: Include per-field/source mapping when available
+        scrape_options: Scrape options applied prior to extraction
+        ignore_invalid_urls: Skip invalid URLs instead of failing
+        integration: Integration tag/name
+        agent: Agent configuration
+    Returns:
+        Response payload with job id/status (poll with get_extract_status)
+

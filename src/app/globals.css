@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --duck-egg: #c4dcd6;
+  --duck-egg-light: #d1e2de;
+  --luxury-gold: #c5a059;
+  --luxury-gold-dim: #a8874a;
+  --blush: #e8d8d3;
+  --charcoal: #1a1a1a;
+  --luxury-gray: #f9f9f9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-duck-egg: var(--duck-egg);
+  --color-duck-egg-light: var(--duck-egg-light);
+  --color-luxury-gold: var(--luxury-gold);
+  --color-luxury-gold-dim: var(--luxury-gold-dim);
+  --color-blush: var(--blush);
+  --color-charcoal: var(--charcoal);
+  --color-luxury-gray: var(--luxury-gray);
+
+  --font-display: "Playfair Display", "Didot", "Bodoni MT", Georgia, serif;
+  --font-body: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #f9f9f9;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--duck-egg);
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", "Didot", "Bodoni MT", Georgia, serif;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+.font-display {
+  font-family: "Playfair Display", "Didot", "Bodoni MT", Georgia, serif;
+}
+
+.font-body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Luxury Animations */
+@keyframes ken-burns {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    transform: scale(1.1) translateY(-2%);
+  }
+}
+
+.animate-ken-burns {
+  animation: ken-burns 20s ease-out infinite alternate;
+}
+
+@keyframes slow-drift {
+  0% {
+    transform: scale(1.05) translateX(-2%);
+  }
+  100% {
+    transform: scale(1.05) translateX(2%);
+  }
+}
+
+.animate-slow-drift {
+  animation: slow-drift 15s ease-in-out infinite alternate;
+}
+
+@keyframes breathing-scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.03);
+  }
+}
+
+.animate-breathing {
+  animation: breathing-scale 8s ease-in-out infinite alternate;
+}
+
+@keyframes light-glow {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.animate-light-glow {
+  animation: light-glow 4s ease-in-out infinite alternate;
+}
+
+@keyframes gold-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--luxury-gold-dim) 0%,
+    var(--luxury-gold) 50%,
+    var(--luxury-gold-dim) 100%
+  );
+  background-size: 200% auto;
+  animation: gold-shimmer 3s ease-in-out infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

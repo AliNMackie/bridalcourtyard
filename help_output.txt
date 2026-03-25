@@ -1,0 +1,51 @@
+Help on method scrape in module firecrawl.v2.client:
+
+scrape(
+    url: str,
+    *,
+    formats: Optional[List[ForwardRef('FormatOption')]] = None,
+    headers: Optional[Dict[str, str]] = None,
+    include_tags: Optional[List[str]] = None,
+    exclude_tags: Optional[List[str]] = None,
+    only_main_content: Optional[bool] = None,
+    timeout: Optional[int] = None,
+    wait_for: Optional[int] = None,
+    mobile: Optional[bool] = None,
+    parsers: Union[List[str], List[Union[str, firecrawl.v2.types.PDFParser]], NoneType] = None,
+    actions: Optional[List[Union[ForwardRef('WaitAction'), ForwardRef('ScreenshotAction'), ForwardRef('ClickAction'), ForwardRef('WriteAction'), ForwardRef('PressAction'), ForwardRef('ScrollAction'), ForwardRef('ScrapeAction'), ForwardRef('ExecuteJavascriptAction'), ForwardRef('PDFAction')]]] = None,
+    location: Optional[ForwardRef('Location')] = None,
+    skip_tls_verification: Optional[bool] = None,
+    remove_base64_images: Optional[bool] = None,
+    fast_mode: Optional[bool] = None,
+    use_mock: Optional[str] = None,
+    block_ads: Optional[bool] = None,
+    proxy: Optional[str] = None,
+    max_age: Optional[int] = None,
+    store_in_cache: Optional[bool] = None,
+    integration: Optional[str] = None
+) -> firecrawl.v2.types.Document method of firecrawl.v2.client.FirecrawlClient instance
+    Scrape a single URL and return the document.
+    Args:
+        url: URL to scrape
+        formats: List of formats to scrape
+        headers: Dictionary of headers to use
+        include_tags: List of tags to include
+        exclude_tags: List of tags to exclude
+        only_main_content: Whether to only scrape the main content
+        timeout: Timeout in seconds
+        wait_for: Wait for a specific element to be present
+        mobile: Whether to use mobile mode
+        parsers: List of parsers to use
+        actions: List of actions to perform
+        location: Location to scrape
+        skip_tls_verification: Whether to skip TLS verification
+        remove_base64_images: Whether to remove base64 images
+        fast_mode: Whether to use fast mode
+        use_mock: Whether to use mock mode
+        block_ads: Whether to block ads
+        proxy: Proxy to use
+        max_age: Maximum age of the cache
+        store_in_cache: Whether to store the result in the cache
+    Returns:
+        Document
+
