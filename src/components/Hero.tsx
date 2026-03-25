@@ -25,6 +25,7 @@ export default function Hero() {
               className="object-cover object-[center_20%]"
               priority
               loading="eager"
+              sizes="100vw"
             />
           </motion.div>
           {/* Flat overlay with specific opacity for clarity */}

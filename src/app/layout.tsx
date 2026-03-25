@@ -57,6 +57,9 @@ export default function RootLayout({
             }),
           }}
         />
+        <meta name="theme-color" content="#C4DCD6" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icon.png" />
       </head>
       <body>
         <Navbar />

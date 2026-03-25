@@ -64,7 +64,7 @@ export default function Footer() {
           </nav>
           
           <div className="pt-8 border-t border-white/5">
-            <p className="text-[11px] font-body font-light uppercase tracking-widest text-white/30">
+            <p className="text-[11px] font-body font-light uppercase tracking-widest text-white/60">
               © {new Date().getFullYear()} The Bridal Courtyard. All Rights Reserved.
             </p>
           </div>

@@ -78,44 +78,65 @@ export default function Contact() {
             
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-1">
+                  <label htmlFor="first-name" className="sr-only">First Name</label>
+                  <input 
+                    id="first-name"
+                    type="text" 
+                    placeholder="First Name" 
+                    className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
+                    required
+                  />
+                </div>
+                <div className="space-y-1">
+                  <label htmlFor="last-name" className="sr-only">Last Name</label>
+                  <input 
+                    id="last-name"
+                    type="text" 
+                    placeholder="Last Name" 
+                    className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
+                    required
+                  />
+                </div>
+              </div>
+              <div className="space-y-1">
+                <label htmlFor="email-address" className="sr-only">Email Address</label>
                 <input 
-                  type="text" 
-                  placeholder="First Name" 
-                  className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                  required
-                />
-                <input 
-                  type="text" 
-                  placeholder="Last Name" 
+                  id="email-address"
+                  type="email" 
+                  placeholder="Email Address" 
                   className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
                   required
                 />
               </div>
-              <input 
-                type="email" 
-                placeholder="Email Address" 
-                className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                required
-              />
-              <input 
-                type="tel" 
-                placeholder="Phone Number" 
-                className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                required
-              />
               <div className="space-y-1">
-                <label className="text-[11px] uppercase tracking-widest text-charcoal/40 ml-1">Preferred Date</label>
+                <label htmlFor="phone-number" className="sr-only">Phone Number</label>
                 <input 
+                  id="phone-number"
+                  type="tel" 
+                  placeholder="Phone Number" 
+                  className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
+                  required
+                />
+              </div>
+              <div className="space-y-1">
+                <label htmlFor="preferred-date" className="text-[11px] uppercase tracking-widest text-charcoal/40 ml-1">Preferred Date</label>
+                <input 
+                  id="preferred-date"
                   type="date" 
                   className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
                   required
                 />
               </div>
-              <textarea 
-                placeholder="Anything you'd like Lindsay to know?" 
-                rows={3}
-                className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors resize-none"
-              />
+              <div className="space-y-1">
+                <label htmlFor="message" className="sr-only">Message for Lindsay</label>
+                <textarea 
+                  id="message"
+                  placeholder="Anything you'd like Lindsay to know?" 
+                  rows={3}
+                  className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors resize-none"
+                />
+              </div>
               
               <div className="pt-4 space-y-4">
                 <button 
