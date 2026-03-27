@@ -1,0 +1,13 @@
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[context.production]
+  branch = "bridal-sandbox"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
