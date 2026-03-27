@@ -1,8 +1,15 @@
 
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CookieBanner from "@/components/CookieBanner";
+
+const domaineSans = localFont({
+  src: "../../public/Fonts/DomaineSansDisplay-Thin.otf",
+  variable: "--font-display",
+});
 
 export const metadata: Metadata = {
   title: "Bridal Courtyard | Luxury Bridal Boutique Glasgow",
@@ -25,14 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`scroll-smooth ${domaineSans.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -57,14 +58,15 @@ export default function RootLayout({
             }),
           }}
         />
-        <meta name="theme-color" content="#C4DCD6" />
+        <meta name="theme-color" content="#8fa28f" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png" />
       </head>
-      <body>
+      <body className="font-body">
         <Navbar />
         {children}
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

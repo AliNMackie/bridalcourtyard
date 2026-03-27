@@ -2,7 +2,6 @@
 "use client";
 
 import { Section } from "./ui/Section";
-import { ArrowRight } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -18,34 +17,34 @@ export default function Contact() {
 
           <div className="space-y-10 text-charcoal font-body font-light">
             <div className="space-y-3">
-              <p className="font-medium text-xs uppercase tracking-widest text-luxury-gold">Address</p>
+              <p className="font-medium text-xs uppercase tracking-widest text-sage">Address</p>
               <p className="text-lg leading-relaxed">
                 48 St Andrew&apos;s Square<br />Glasgow G1 5PP
               </p>
               <a 
                 href="https://maps.google.com/maps?q=48+St+Andrews+Square+Glasgow+G1+5PP" 
                 target="_blank" 
-                className="inline-block text-[13px] text-luxury-gold hover:underline tracking-wider"
+                className="inline-block text-[13px] text-sage hover:underline tracking-wider"
               >
                 Open in Google Maps &rarr;
               </a>
             </div>
 
             <div className="space-y-3">
-              <p className="font-medium text-xs uppercase tracking-widest text-luxury-gold">Phone</p>
+              <p className="font-medium text-xs uppercase tracking-widest text-sage">Phone</p>
               <a 
                 href="tel:01412378680" 
-                className="text-lg text-luxury-gold hover:underline transition-all cursor-pointer block"
+                className="text-lg text-sage hover:underline transition-all cursor-pointer block"
               >
                 0141 237 8680
               </a>
             </div>
 
             <div className="space-y-3">
-              <p className="font-medium text-xs uppercase tracking-widest text-luxury-gold">Email</p>
+              <p className="font-medium text-xs uppercase tracking-widest text-sage">Email</p>
               <a 
                 href="mailto:info@bridalcourtyard.com" 
-                className="text-lg text-luxury-gold hover:underline transition-all cursor-pointer block"
+                className="text-lg text-sage hover:underline transition-all cursor-pointer block"
               >
                 info@bridalcourtyard.com
               </a>
@@ -59,7 +58,7 @@ export default function Contact() {
           </div>
 
           {/* Map Embed */}
-          <div className="w-full h-72 bg-luxury-gray relative overflow-hidden border border-gray-100 grayscale hover:grayscale-0 transition-all duration-700">
+          <div className="w-full h-72 bg-sage-light relative overflow-hidden border border-gray-100 grayscale hover:grayscale-0 transition-all duration-700">
             <iframe 
               src="https://maps.google.com/maps?q=48+St+Andrews+Square+Glasgow+G1+5PP&output=embed"
               width="100%" 
@@ -72,84 +71,30 @@ export default function Contact() {
         </div>
 
         {/* Right Column (Form) */}
-        <div className="flex-1 bg-blush py-24 px-8 md:px-20 lg:px-32 flex flex-col justify-center">
-          <div className="max-w-md mx-auto w-full space-y-10">
-            <h3 className="font-display text-3xl md:text-4xl text-charcoal">Request an Appointment</h3>
+        <div className="flex-1 bg-white py-24 px-8 md:px-12 lg:px-20 flex flex-col justify-center">
+          <div className="w-full space-y-10">
+            <div className="space-y-4">
+              <h3 className="font-display text-3xl md:text-4xl text-charcoal">Request an Appointment</h3>
+              <p className="font-body text-sm text-charcoal/60 leading-relaxed">
+                Please complete the form below to request a private consultation at our Glasgow boutique.
+              </p>
+            </div>
             
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-1">
-                  <label htmlFor="first-name" className="sr-only">First Name</label>
-                  <input 
-                    id="first-name"
-                    type="text" 
-                    placeholder="First Name" 
-                    className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                    required
-                  />
-                </div>
-                <div className="space-y-1">
-                  <label htmlFor="last-name" className="sr-only">Last Name</label>
-                  <input 
-                    id="last-name"
-                    type="text" 
-                    placeholder="Last Name" 
-                    className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                    required
-                  />
-                </div>
-              </div>
-              <div className="space-y-1">
-                <label htmlFor="email-address" className="sr-only">Email Address</label>
-                <input 
-                  id="email-address"
-                  type="email" 
-                  placeholder="Email Address" 
-                  className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                  required
-                />
-              </div>
-              <div className="space-y-1">
-                <label htmlFor="phone-number" className="sr-only">Phone Number</label>
-                <input 
-                  id="phone-number"
-                  type="tel" 
-                  placeholder="Phone Number" 
-                  className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                  required
-                />
-              </div>
-              <div className="space-y-1">
-                <label htmlFor="preferred-date" className="text-[11px] uppercase tracking-widest text-charcoal/40 ml-1">Preferred Date</label>
-                <input 
-                  id="preferred-date"
-                  type="date" 
-                  className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                  required
-                />
-              </div>
-              <div className="space-y-1">
-                <label htmlFor="message" className="sr-only">Message for Lindsay</label>
-                <textarea 
-                  id="message"
-                  placeholder="Anything you'd like Lindsay to know?" 
-                  rows={3}
-                  className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors resize-none"
-                />
-              </div>
-              
-              <div className="pt-4 space-y-4">
-                <button 
-                  type="submit"
-                  className="w-full bg-charcoal text-white py-5 text-[13px] uppercase tracking-[0.2em] font-body font-medium hover:bg-luxury-gold transition-all duration-300 shadow-lg flex items-center justify-center gap-2 group"
-                >
-                  Send Request <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
-                <p className="text-center font-body text-[13px] italic text-charcoal/50">
-                  Lindsay will be in touch within one working day.
-                </p>
-              </div>
-            </form>
+            <div className="w-full border border-gray-100 shadow-sm rounded-sm overflow-hidden">
+              <iframe 
+                src="https://app.bridallive.com/bl-server/appointmentRequest/c8a61cc3.shtml?lang=en" 
+                width="100%" 
+                height="1100" 
+                className="w-full"
+                style={{ border: 0 }}
+                title="Bridal Live Appointment Request"
+              />
+            </div>
+
+            <p className="text-center font-body text-[13px] italic text-charcoal/50">
+              Lindsay will be in touch &apos;tout-suite&apos;.<br />
+              (CHECK YOUR JUNK MAIL IF YOU DON&apos;T HEAR FROM US !)
+            </p>
           </div>
         </div>
 

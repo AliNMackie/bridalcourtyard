@@ -3,26 +3,28 @@
 :root {
   --background: #ffffff;
   --foreground: #1a1a1a;
-  --duck-egg: #c4dcd6;
+  --sage-light: #f4f7f4;
+  --sage: #8fa28f;
+  --sage-dark: #6b7a6b;
   --white: #ffffff;
   --charcoal: #1a1a1a;
-  --luxury-gold: #c5a059;
-  --blush: #f5edea;
   --luxury-gray: #f9f9f9;
+  --blush: #fcf9f8;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-duck-egg: var(--duck-egg);
+  --color-sage-light: var(--sage-light);
+  --color-sage: var(--sage);
+  --color-sage-dark: var(--color-sage-dark);
   --color-white: var(--white);
   --color-charcoal: var(--charcoal);
-  --color-luxury-gold: var(--luxury-gold);
-  --color-blush: var(--blush);
   --color-luxury-gray: var(--luxury-gray);
+  --color-blush: var(--blush);
 
-  --font-display: "Playfair Display", "Didot", "Bodoni MT", Georgia, serif;
-  --font-body: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Domaine Sans Display", "Didot", serif;
+  --font-body: "Domaine Sans Display", "Helvetica Neue", Arial, sans-serif;
 
   --spacing-18: 4.5rem;
   --spacing-22: 5.5rem;
@@ -32,7 +34,7 @@
 body {
   background: var(--background);
   color: var(--charcoal);
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-body), sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -42,17 +44,17 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-display), serif;
   font-weight: 400;
   color: var(--charcoal);
 }
 
 .font-display {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-display), serif;
 }
 
 .font-label {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-display), sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -60,23 +62,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .eyebrow {
   display: block;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-display), sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 13px;
-  color: var(--luxury-gold);
+  color: var(--sage);
   letter-spacing: 0.2em;
   margin-bottom: 1rem;
 }
 
 /* Editorial dividers */
-.gold-rule {
+.sage-rule {
   height: 1px;
-  background-color: var(--luxury-gold);
+  background-color: var(--sage);
   width: 60px;
 }
 
-.gold-rule-center {
+.sage-rule-center {
   margin-left: auto;
   margin-right: auto;
 }
@@ -96,9 +98,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Quote styling */
 .quote-block {
-  background-color: var(--duck-egg);
+  background-color: var(--sage-light);
   padding: 2rem;
-  border-left: 3px solid var(--luxury-gold);
+  border-left: 3px solid var(--sage);
 }
 
 /* Form refinement */
@@ -107,13 +109,13 @@ input, textarea {
   background-color: #ffffff;
   border: 1px solid #d0c8c0;
   padding: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-body), sans-serif;
   font-size: 15px;
 }
 
 input:focus, textarea:focus {
   outline: none;
-  border-color: var(--luxury-gold);
+  border-color: var(--sage);
 }
 
 /* Button variants */
@@ -127,20 +129,20 @@ input:focus, textarea:focus {
 }
 
 .btn-charcoal:hover {
-  background-color: var(--luxury-gold);
+  background-color: var(--sage);
 }
 
-.btn-outline-gold {
+.btn-outline-sage {
   background-color: transparent;
-  border: 1px solid var(--luxury-gold);
-  color: var(--luxury-gold);
+  border: 1px solid var(--sage);
+  color: var(--sage);
   text-transform: uppercase;
   letter-spacing: 0.15em;
   padding: 0.75rem 1.5rem;
   transition: all 0.3s ease;
 }
 
-.btn-outline-gold:hover {
-  background-color: var(--luxury-gold);
+.btn-outline-sage:hover {
+  background-color: var(--sage);
   color: white;
 }
