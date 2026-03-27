@@ -37,10 +37,11 @@ export default function Hero() {
             className="space-y-8"
           >
             <div className="space-y-4">
-              <span className="eyebrow !text-white !tracking-[0.3em] !text-[11px] drop-shadow-sm">Glasgow Boutique</span>
-              <h1 className="text-6xl md:text-7xl lg:text-9xl text-white font-display leading-[1.1] md:leading-[1.05] drop-shadow-2xl">
-                The Bridal <br className="hidden md:block" />
-                <span className="italic font-light">Courtyard</span>
+              <span className="eyebrow !text-white !tracking-[0.3em] !text-[11px] drop-shadow-sm uppercase">Exclusive by Appointment &middot; Glasgow</span>
+              <h1 className="text-7xl md:text-9xl !text-white mb-8 leading-[0.9] italic font-display tracking-tighter drop-shadow-2xl">
+                Modern. <br />
+                Elegant. <br />
+                <span className="font-light">Confidently Chic.</span>
               </h1>
             </div>
 

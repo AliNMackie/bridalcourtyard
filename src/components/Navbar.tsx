@@ -58,7 +58,7 @@ export default function Navbar() {
           </Link>
 
           <div className={cn(
-            "hidden lg:flex items-center space-x-8 text-[11px] uppercase tracking-[0.2em] font-light transition-colors duration-500",
+            "hidden lg:flex items-center space-x-10 text-[13px] uppercase tracking-[0.15em] font-light transition-colors duration-500",
             isScrolled ? "text-charcoal" : "text-white"
           )}>
             <Link href="/" className="hover:text-sage transition-colors">Home</Link>

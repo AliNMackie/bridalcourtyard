@@ -49,10 +49,10 @@ export default function Footer() {
 
         {/* Column 2: Navigation */}
         <div className="space-y-8">
-          <h4 className="font-display text-[11px] uppercase tracking-[0.25em] text-sage font-medium">
+          <h4 className="font-display text-[12px] uppercase tracking-[0.25em] text-sage font-medium">
             Navigate
           </h4>
-          <nav className="flex flex-col space-y-3 font-body text-sm font-light text-white/70">
+          <nav className="flex flex-col space-y-4 font-body text-sm md:text-base font-light text-white/70">
             <Link href="/" className="hover:text-sage transition-colors">Home</Link>
             <Link href="/our-people" className="hover:text-sage transition-colors">Our People</Link>
             <Link href="/our-boutique" className="hover:text-sage transition-colors">The Boutique</Link>
@@ -67,17 +67,17 @@ export default function Footer() {
 
         {/* Column 3: Social */}
         <div className="space-y-8">
-          <h4 className="font-display text-[11px] uppercase tracking-[0.25em] text-sage font-medium">
+          <h4 className="font-display text-[12px] uppercase tracking-[0.25em] text-sage font-medium">
             Social
           </h4>
-          <nav className="flex flex-col space-y-3 font-body text-sm font-light text-white/70">
+          <nav className="flex flex-col space-y-4 font-body text-sm md:text-base font-light text-white/70">
             <a href="https://www.instagram.com/thebridalcourtyard/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-sage transition-colors">Instagram</a>
             <a href="https://www.facebook.com/TheBridalCourtyard/" target="_blank" rel="noopener noreferrer" className="hover:text-sage transition-colors">Facebook</a>
             <a href="#" className="hover:text-sage transition-colors">Pinterest</a>
           </nav>
           
           <div className="pt-8 border-t border-white/5">
-            <p className="text-[10px] font-body font-light uppercase tracking-widest text-white/40">
+            <p className="text-[11px] font-body font-light uppercase tracking-widest text-white/60">
               © 2026 THE BRIDAL COURTYARD. ALL RIGHTS RESERVED
             </p>
           </div>

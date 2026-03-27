@@ -1,9 +1,14 @@
 
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Designers from "@/components/Designers";
-import ReviewsSection from "@/components/ReviewsSection";
+import BrandPhilosophy from "@/components/BrandPhilosophy";
 import MeetLindsay from "@/components/MeetLindsay";
+import Designers from "@/components/Designers";
+import JimmyChooSection from "@/components/JimmyChooSection";
+import ReviewsSection from "@/components/ReviewsSection";
+import HowItWorks from "@/components/HowItWorks";
+import FAQ from "@/components/FAQ";
+import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,9 +21,14 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <Designers />
-      <ReviewsSection />
+      <BrandPhilosophy />
       <MeetLindsay />
+      <Designers />
+      <JimmyChooSection />
+      <ReviewsSection />
+      <HowItWorks />
+      <FAQ />
+      <Contact />
     </main>
   );
 }

@@ -37,17 +37,23 @@ export default function Designers() {
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
                 
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-charcoal/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8">
-                  <span className="text-white font-body text-[11px] uppercase tracking-[0.25em] border border-white/40 px-6 py-3 hover:bg-white hover:text-charcoal transition-all">
-                    View Collection
-                  </span>
+                {/* Optimized Hover Overlay */}
+                <div className="absolute inset-0 bg-charcoal/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-8">
+                  <div className="text-center">
+                    <p className="text-white text-[13px] font-light leading-relaxed mb-6 italic opacity-0 group-hover:opacity-100 transition-all duration-700 delay-100 translate-y-4 group-hover:translate-y-0 text-balance">
+                      &quot;{designer.persona}&quot;
+                    </p>
+                    <div className="w-12 h-[1px] bg-sage mx-auto mb-6" />
+                    <span className="text-white font-body text-[10px] uppercase tracking-[0.25em] border border-white/20 px-6 py-3 hover:bg-white hover:text-charcoal transition-all">
+                      View Collection
+                    </span>
+                  </div>
                 </div>
               </div>
               
               <div className="space-y-2 transition-colors duration-300">
                 <h3 className="text-base md:text-lg font-display tracking-wide uppercase text-charcoal group-hover:text-sage">{designer.name}</h3>
-                <p className="text-[13px] text-charcoal/50 font-body font-light px-8 leading-relaxed line-clamp-2">{designer.description}</p>
+                <p className="text-[13px] text-charcoal/50 font-body font-light px-8 md:px-12 leading-relaxed">Starting from {designer.priceRange.split('-')[0].trim()}</p>
               </div>
             </Link>
           </motion.div>
