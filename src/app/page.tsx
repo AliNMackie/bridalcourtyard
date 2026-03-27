@@ -2,6 +2,7 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Designers from "@/components/Designers";
+import ReviewsSection from "@/components/ReviewsSection";
 import MeetLindsay from "@/components/MeetLindsay";
 import { Metadata } from "next";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <About />
       <Designers />
+      <ReviewsSection />
       <MeetLindsay />
     </main>
   );

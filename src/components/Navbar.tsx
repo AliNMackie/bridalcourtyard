@@ -45,8 +45,7 @@ export default function Navbar() {
             className="transition-opacity hover:opacity-80"
           >
             <div className={cn(
-              "relative w-48 h-12 md:w-56 md:h-14 transition-all duration-500",
-              !isScrolled && "brightness-0 invert"
+              "relative w-48 h-12 md:w-56 md:h-14 transition-all duration-500"
             )}>
               <Image 
                 src="/logo/logo.png" 

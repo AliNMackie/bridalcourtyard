@@ -18,7 +18,7 @@ export const TESTIMONIALS = [
   },
   {
     author: "Ciara",
-    text: "Lindsey and Simone are the nicest people to deal with and go over and above their job role. They are so welcoming, caring and know exactly how to make people feel. We found the perfect dress for my sister at very short notice and they did everything to accommodate her."
+    text: "Lindsay and Simone are the nicest people to deal with and go over and above their job role. They are so welcoming, caring and know exactly how to make people feel. We found the perfect dress for my sister at very short notice and they did everything to accommodate her."
   },
   {
     author: "Jess",

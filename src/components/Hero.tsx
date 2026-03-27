@@ -1,60 +1,79 @@
 
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+import { Section } from "./ui/Section";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-charcoal">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0 group">
-        <Image 
-          src="/hero-cinematic.png" 
-          alt="The Bridal Courtyard" 
+    <Section id="home" className="relative h-screen min-h-[700px] p-0 overflow-hidden flex items-center">
+      {/* Background Image with Parallax-like Zoom */}
+      <motion.div 
+        initial={{ scale: 1.1 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 10, ease: "easeOut" }}
+        className="absolute inset-0 z-0"
+      >
+        <Image
+          src="/hero.png"
+          alt="Luxury Bridal Boutique Glasgow"
           fill
-          className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-60"
+          className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-charcoal/20" />
+        {/* Multi-layered Premium Overlays */}
+        <div className="absolute inset-0 bg-charcoal/30 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/20" />
+        <div className="absolute inset-0 bg-sage/5 mix-blend-multiply" />
+      </motion.div>
+
+      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full pt-20">
+        <div className="max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="space-y-8"
+          >
+            <div className="space-y-4">
+              <span className="eyebrow !text-white !tracking-[0.3em] !text-[11px] drop-shadow-sm">Glasgow Boutique</span>
+              <h1 className="text-6xl md:text-7xl lg:text-9xl text-white font-display leading-[1.1] md:leading-[1.05] drop-shadow-2xl">
+                The Bridal <br className="hidden md:block" />
+                <span className="italic font-light">Courtyard</span>
+              </h1>
+            </div>
+
+            <p className="font-body text-lg md:text-xl text-white/90 max-w-xl leading-relaxed font-light drop-shadow-md">
+              A carefully curated collection of designer bridal gowns in the heart of Glasgow&apos;s historic St Andrew&apos;s Square.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-6 pt-4">
+              <Link
+                href="/contact"
+                className="bg-white text-charcoal px-10 py-5 text-[12px] uppercase tracking-[0.2em] font-medium hover:bg-sage hover:text-white transition-all duration-300 shadow-xl text-center"
+              >
+                Request Appointment
+              </Link>
+              <Link
+                href="/designers"
+                className="bg-transparent border border-white/40 text-white backdrop-blur-sm px-10 py-5 text-[12px] uppercase tracking-[0.2em] font-medium hover:bg-white hover:text-charcoal transition-all duration-300 text-center"
+              >
+                Explore Designers
+              </Link>
+            </div>
+          </motion.div>
+        </div>
       </div>
 
+      {/* Floating Scroll Indicator */}
       <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        className="relative z-10 max-w-4xl mx-auto text-center space-y-10 px-6"
+        animate={{ y: [0, 12, 0] }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 hidden md:block"
       >
-        <div className="space-y-4">
-          <span className="block text-[13px] uppercase tracking-[0.3em] text-white/80 font-light">
-            Glasgow G1 5PP
-          </span>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-tight">
-            The Bridal Courtyard
-          </h1>
-        </div>
-        
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 pt-4">
-          <Link 
-            href="/contact"
-            className="bg-white text-charcoal px-10 py-5 text-[13px] uppercase tracking-[0.2em] font-medium hover:bg-sage hover:text-white transition-all duration-300 shadow-xl"
-          >
-            Request Appointment
-          </Link>
-        </div>
+        <div className="w-[1px] h-16 bg-gradient-to-b from-white to-transparent" />
       </motion.div>
-
-      {/* Scroll Indicator */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
-      >
-        <span className="text-[10px] uppercase tracking-[0.4em] text-white/40 font-light">Scroll</span>
-        <div className="w-[1px] h-12 bg-gradient-to-down from-white/40 to-transparent" />
-      </motion.div>
-    </section>
+    </Section>
   );
 }

@@ -1,57 +1,61 @@
 
 "use client";
 
-import Image from "next/image";
+import { Section } from "./ui/Section";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="bg-white py-24 md:py-32 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 md:gap-24">
-        
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2 }}
-          viewport={{ once: true }}
-          className="relative aspect-[4/5] bg-luxury-gray"
-        >
-          <Image 
-            src="/about-cinematic.png" 
-            alt="Bridal Courtyard Atmosphere" 
-            fill
-            className="object-cover p-4"
-          />
-          <div className="absolute -bottom-8 -right-8 w-48 h-48 border border-sage/20 -z-10" />
-        </motion.div>
-
-        <div className="flex flex-col justify-center space-y-12">
-          <div className="space-y-6">
-            <span className="eyebrow">Philosophy</span>
-            <h2 className="font-display text-4xl md:text-5xl text-charcoal leading-tight">
-              An Elegant Rehearsal For Your Big Day
-            </h2>
-          </div>
-
-          <div className="space-y-8 font-body font-light text-charcoal/80 text-lg leading-relaxed">
-            <p>
-              At The Bridal Courtyard, we want to help the modern bride create a wedding day look which is elegant, sophisticated and reflects their personality.
-            </p>
-            <p>
-              Our beautifully curated collection of wedding gowns are exclusive to us here in Glasgow. We carefully source our designers to offer our brides something fresh, chic and truly unique.
-            </p>
-          </div>
-
-          <div className="pt-4">
-            <div className="sage-rule mb-8" />
-            <div className="space-y-2">
-              <p className="font-display text-2xl text-charcoal">Lindsay Jackson</p>
-              <p className="font-body text-[11px] uppercase tracking-widest text-sage">Founder & Creative Director</p>
+    <Section id="about" className="bg-sage-light py-24 md:py-32 overflow-hidden border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center">
+          
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="space-y-8"
+          >
+            <div className="space-y-4">
+              <span className="eyebrow">Established 2017</span>
+              <h2 className="font-display text-4xl md:text-5xl lg:text-7xl text-charcoal leading-tight">
+                Modern Elegance <br />
+                <span className="italic">Redefined.</span>
+              </h2>
+              <div className="sage-rule" />
             </div>
-          </div>
-        </div>
+            
+            <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed max-w-xl font-light">
+              We believe that finding your wedding dress should be as memorable as the day itself. Our collection is a tribute to the modern bride: confident, stylish, and unapologetically herself.
+            </p>
+            
+            <div className="flex items-center space-x-6 pt-4">
+              <div className="w-12 h-[1px] bg-sage" />
+              <p className="font-body text-[11px] uppercase tracking-[0.3em] text-sage font-medium">
+                The Bridal Courtyard
+              </p>
+            </div>
+          </motion.div>
 
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="relative aspect-[4/5] bg-white shadow-2xl overflow-hidden"
+          >
+            <Image
+              src="/about-cinematic.png"
+              alt="Inside our Glasgow Boutique"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-sage/5 mix-blend-multiply" />
+          </motion.div>
+        </div>
       </div>
-    </section>
+    </Section>
   );
 }

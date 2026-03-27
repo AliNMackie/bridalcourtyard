@@ -78,7 +78,7 @@ export default function Footer() {
           
           <div className="pt-8 border-t border-white/5">
             <p className="text-[10px] font-body font-light uppercase tracking-widest text-white/40">
-              © 2020 BRIDAL COURT YARD. ALL RIGHTS RESERVED
+              © 2026 THE BRIDAL COURTYARD. ALL RIGHTS RESERVED
             </p>
           </div>
         </div>
