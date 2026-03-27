@@ -1,10 +1,17 @@
-
 [build]
   command = "npm run build"
   publish = ".next"
 
 [context.production]
   branch = "bridal-sandbox"
+
+[context."feature/site-buildout"]
+  command = "npm run build"
+  publish = ".next"
+
+[context.branch-deploy]
+  command = "npm run build"
+  publish = ".next"
 
 [[redirects]]
   from = "/*"
