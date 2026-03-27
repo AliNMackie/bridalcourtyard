@@ -1,17 +1,22 @@
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-charcoal py-20 px-6 md:px-12 text-white border-t border-white/5">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
         
         {/* Column 1: Brand & Contact */}
         <div className="space-y-8">
           <div className="space-y-4">
-            <h3 className="font-display text-2xl md:text-3xl uppercase tracking-widest text-white">
-              Bridal Courtyard
-            </h3>
+            <Image
+              src="/logo.png"
+              alt="The Bridal Courtyard"
+              width={180}
+              height={50}
+              className="h-10 w-auto brightness-0 invert"
+            />
             <p className="font-body text-[13px] uppercase tracking-[0.15em] text-white/60 font-light">
               Glasgow&apos;s Premier Bridal Boutique
             </p>
@@ -39,20 +44,32 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Column 2: Navigation */}
+        {/* Column 2: Navigate */}
         <div className="space-y-8">
           <h4 className="font-body text-[12px] uppercase tracking-[0.25em] text-luxury-gold font-medium">
             Navigate
           </h4>
           <nav className="flex flex-col space-y-4 font-body text-sm md:text-base font-light text-white/70">
-            <Link href="#boutique" className="hover:text-white transition-colors">Our Boutique</Link>
-            <Link href="#lindsay" className="hover:text-white transition-colors">Meet Lindsay</Link>
-            <Link href="#designers" className="hover:text-white transition-colors">Our Designers</Link>
-            <Link href="#contact" className="hover:text-white transition-colors">Book Appointment</Link>
+            <Link href="/our-boutique" className="hover:text-white transition-colors">Our Boutique</Link>
+            <Link href="/designers" className="hover:text-white transition-colors">Our Designers</Link>
+            <Link href="/accessories" className="hover:text-white transition-colors">Accessories</Link>
+            <Link href="/your-views" className="hover:text-white transition-colors">Reviews</Link>
+            <Link href="/contact" className="hover:text-white transition-colors">Book Appointment</Link>
           </nav>
         </div>
 
-        {/* Column 3: Social / Hours (Placeholder) */}
+        {/* Column 3: Information */}
+        <div className="space-y-8">
+          <h4 className="font-body text-[12px] uppercase tracking-[0.25em] text-luxury-gold font-medium">
+            Information
+          </h4>
+          <nav className="flex flex-col space-y-4 font-body text-sm md:text-base font-light text-white/70">
+            <Link href="/faq" className="hover:text-white transition-colors">FAQ</Link>
+            <Link href="/privacy-and-cookies" className="hover:text-white transition-colors">Privacy & Cookies</Link>
+          </nav>
+        </div>
+
+        {/* Column 4: Social */}
         <div className="space-y-8">
           <h4 className="font-body text-[12px] uppercase tracking-[0.25em] text-luxury-gold font-medium">
             Social
