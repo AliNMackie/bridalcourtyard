@@ -2,6 +2,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
@@ -19,6 +20,11 @@ const NAV_LINKS = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
+  // On inner pages, always show dark styling
+  const showDark = isScrolled || !isHome;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +35,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change
+  // Lock body scroll when mobile menu is open
   useEffect(() => {
     if (isMobileOpen) {
       document.body.style.overflow = "hidden";
@@ -38,6 +44,7 @@ export default function Navbar() {
     }
     return () => { document.body.style.overflow = ""; };
   }, [isMobileOpen]);
+
 
   return (
     <>
@@ -55,7 +62,9 @@ export default function Navbar() {
             "w-full transition-all duration-500 border-b",
             isScrolled 
               ? "bg-white border-luxury-gold py-3 shadow-sm" 
-              : "bg-white/0 border-transparent py-5"
+              : showDark 
+                ? "bg-white border-gray-100 py-5 shadow-sm"
+                : "bg-white/0 border-transparent py-5"
           )}
         >
           <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -68,7 +77,7 @@ export default function Navbar() {
                 height={50} 
                 className={cn(
                   "h-10 md:h-12 w-auto transition-all duration-500",
-                  isScrolled ? "brightness-0" : "brightness-0 invert"
+                  showDark ? "brightness-0" : "brightness-0 invert"
                 )}
                 priority
               />
@@ -77,7 +86,7 @@ export default function Navbar() {
             {/* Desktop Links */}
             <div className={cn(
               "hidden lg:flex items-center space-x-8 text-[12px] uppercase tracking-[0.15em] font-light transition-colors duration-500",
-              isScrolled ? "text-charcoal" : "text-white"
+              showDark ? "text-charcoal" : "text-white"
             )}>
               {NAV_LINKS.map((link) => (
                 <Link 
@@ -96,7 +105,7 @@ export default function Navbar() {
                 href="/contact"
                 className={cn(
                   "hidden md:inline-block border px-6 py-2 text-[10px] md:text-xs uppercase tracking-[0.15em] font-light transition-all duration-300",
-                  isScrolled 
+                  showDark 
                     ? "border-charcoal bg-white text-charcoal hover:bg-luxury-gold hover:border-luxury-gold hover:text-white" 
                     : "border-white bg-transparent text-white hover:bg-white hover:text-charcoal"
                 )}
@@ -109,7 +118,7 @@ export default function Navbar() {
                 onClick={() => setIsMobileOpen(true)}
                 className={cn(
                   "lg:hidden p-2 transition-colors",
-                  isScrolled ? "text-charcoal" : "text-white"
+                  showDark ? "text-charcoal" : "text-white"
                 )}
                 aria-label="Open menu"
               >
