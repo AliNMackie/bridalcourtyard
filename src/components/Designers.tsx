@@ -7,12 +7,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const DESIGNERS = [
-  { name: "Justin Alexander Signature", desc: "Redefining luxury with showmanship and unrivaled attention to detail.", img: "/images/home/justin-alexander-signature-pl/justin-alexander-signature-pi.webp" },
-  { name: "Truvelle", desc: "Romantic and modern, light weight fabrics and fresh lines from Vancouver.", img: "/images/home/truvelle/truvelle.jpg" },
-  { name: "Laudae", desc: "Cool and sexy dresses created to make you look and feel your best.", img: "/images/home/laudae/laudae.jpg" },
-  { name: "Anne Barge", desc: "Vintage glamour with timeless silhouettes and refined details.", img: "/images/home/anne-barge/anne-barge.jpg" },
-  { name: "Alyssa Kristin", desc: "Considered and versatile. Soft structure and intended minimalism.", img: "/images/home/alyssa-kristin/alyssa-kristin-m.jpg" },
-  { name: "Aesling", desc: "Sleek simplicity highlighting natural silhouettes and clean lines.", img: "/images/home/aesling/aesling.jpg" },
+  { name: "Justin Alexander Signature", desc: "Redefining luxury with showmanship and unrivaled attention to detail.", img: "/images/home/justin-alexander-signature-pl/justin-alexander-signature-pi.webp", href: "/justin-alexander" },
+  { name: "Truvelle", desc: "Romantic and modern, light weight fabrics and fresh lines from Vancouver.", img: "/images/home/truvelle/truvelle.jpg", href: "/truvelle" },
+  { name: "Laudae", desc: "Cool and sexy dresses created to make you look and feel your best.", img: "/images/home/laudae/laudae.jpg", href: "/laudae" },
+  { name: "Anne Barge", desc: "Vintage glamour with timeless silhouettes and refined details.", img: "/images/home/anne-barge/anne-barge.jpg", href: "/anne-barge" },
+  { name: "Alyssa Kristin", desc: "Considered and versatile. Soft structure and intended minimalism.", img: "/images/home/alyssa-kristin/alyssa-kristin-m.jpg", href: "/alyssa-kristin" },
+  { name: "Aesling", desc: "Sleek simplicity highlighting natural silhouettes and clean lines.", img: "/images/home/aesling/aesling.jpg", href: "/aesling" },
 ];
 
 export default function Designers() {
@@ -36,7 +36,7 @@ export default function Designers() {
             key={designer.name}
             className="group"
           >
-            <Link href="#contact" className="block space-y-6 text-center">
+            <Link href={designer.href} className="block space-y-6 text-center">
               <div className="aspect-[3/4] bg-luxury-gray relative overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2 border border-transparent group-hover:border-luxury-gold/30">
                 <Image
                   src={designer.img}
