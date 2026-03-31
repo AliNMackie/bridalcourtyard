@@ -8,7 +8,7 @@ export const DESIGNERS = [
     persona: "The Grace Kelly of the 21st century—timeless, regal, and breathtakingly sophisticated.",
     priceRange: "£2,500 - £4,500",
     externalLink: "https://www.justinalexander.com/justin-alexander-signature/",
-    image: "/hero.png" 
+    image: "/images/home/justin-alexander-signature-pl/justin-alexander-signature-pi.webp" 
   },
   {
     slug: "truvelle",
@@ -18,7 +18,7 @@ export const DESIGNERS = [
     persona: "The creative spirit—cool, calm, and effortlessly chic.",
     priceRange: "£2,000 - £3,200",
     externalLink: "https://truvelle.com/",
-    image: "/boutique.png"
+    image: "/images/home/truvelle/truvelle.jpg"
   },
   {
     slug: "aesling",
@@ -28,7 +28,7 @@ export const DESIGNERS = [
     persona: "The architect of style—bold, precise, and understated.",
     priceRange: "£1,800 - £2,800",
     externalLink: "https://aesling.com/",
-    image: "/silk.png"
+    image: "/images/home/aesling/aesling.jpg"
   },
   {
     slug: "anne-barge",
@@ -38,7 +38,7 @@ export const DESIGNERS = [
     persona: "The romantic dreamer—sweet, elegant, and perpetually in style.",
     priceRange: "£2,200 - £3,500",
     externalLink: "https://www.annebarge.com/collections/blue-willow",
-    image: "/about-cinematic.png"
+    image: "/images/home/anne-barge/anne-barge.jpg"
   },
   {
     slug: "alyssa-kristin",
@@ -48,7 +48,7 @@ export const DESIGNERS = [
     persona: "The confident muse—daring, sleek, and undeniably stunning.",
     priceRange: "£2,400 - £3,800",
     externalLink: "https://www.alyssakristin.com/",
-    image: "/gallery-detail.png"
+    image: "/images/home/alyssa-kristin/alyssa-kristin-m.jpg"
   },
   {
     slug: "laudae",
@@ -58,6 +58,6 @@ export const DESIGNERS = [
     persona: "The conscious rebel—spirited, comfortable, and forward-thinking.",
     priceRange: "£1,900 - £2,900",
     externalLink: "https://www.laudae.com/",
-    image: "/hero.png"
+    image: "/images/home/laudae/laudae.jpg"
   }
 ];
