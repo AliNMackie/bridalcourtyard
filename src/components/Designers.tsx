@@ -7,12 +7,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const DESIGNERS = [
-  { name: "Justin Alexander Signature", desc: "Redefining luxury with showmanship and unrivaled attention to detail.", img: "https://bridalcourtyard.com/wp-content/uploads/2022/09/JAS_99241-SS23-scaled.jpg" },
-  { name: "Truvelle", desc: "Romantic and modern, light weight fabrics and fresh lines from Vancouver.", img: "https://bridalcourtyard.com/wp-content/uploads/2023/08/TRUVELLE-4.jpg" },
-  { name: "Laudae", desc: "Cool and sexy dresses created to make you look and feel your best.", img: "https://bridalcourtyard.com/wp-content/uploads/2023/08/LAUDAE-FP-200x300.jpg" },
-  { name: "Anne Barge", desc: "Vintage glamour with timeless silhouettes and refined details.", img: "https://bridalcourtyard.com/wp-content/uploads/2023/08/ANNE-BARGE-FPn-1-200x300.jpg" },
-  { name: "Alyssa Kristin", desc: "Considered and versatile. Soft structure and intended minimalism.", img: "https://bridalcourtyard.com/wp-content/uploads/2023/11/Celine-09.jpg_1699375882-200x300.jpeg" },
-  { name: "Aesling", desc: "Sleek simplicity highlighting natural silhouettes and clean lines.", img: "https://bridalcourtyard.com/wp-content/uploads/2025/02/0G2A8290-bw-venus-scaled.jpg" },
+  { name: "Justin Alexander Signature", desc: "Redefining luxury with showmanship and unrivaled attention to detail.", img: "/images/home/justin-alexander-signature-pl/_Justin-Alexander-Signature_PI.webp" },
+  { name: "Truvelle", desc: "Romantic and modern, light weight fabrics and fresh lines from Vancouver.", img: "/images/home/truvelle/Truvelle.jpg" },
+  { name: "Laudae", desc: "Cool and sexy dresses created to make you look and feel your best.", img: "/images/home/laudae/Laudae.jpg" },
+  { name: "Anne Barge", desc: "Vintage glamour with timeless silhouettes and refined details.", img: "/images/home/anne-barge/Anne Barge.jpg" },
+  { name: "Alyssa Kristin", desc: "Considered and versatile. Soft structure and intended minimalism.", img: "/images/home/alyssa-kristin/Alyssa Kristin M.JPG" },
+  { name: "Aesling", desc: "Sleek simplicity highlighting natural silhouettes and clean lines.", img: "/images/home/aesling/Aesling.jpg" },
 ];
 
 export default function Designers() {
