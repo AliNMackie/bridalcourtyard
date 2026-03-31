@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import { FAQ_ITEMS } from "@/data/faqs";
+import FAQ_ITEMS_DATA from "@/data/content/faqs.json";
+const FAQ_ITEMS = Array.isArray(FAQ_ITEMS_DATA) ? FAQ_ITEMS_DATA : FAQ_ITEMS_DATA.items;
 import FAQAccordion from "./FAQAccordion";
 
 export const metadata: Metadata = {

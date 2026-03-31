@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+# Enable local backend if you want to test CMS locally using `npx decap-server`
+local_backend: true
+
+collections:
+  - name: "site_content"
+    label: "Site Content"
+    files:
+      - label: "FAQs"
+        name: "faqs"
+        file: "src/data/content/faqs.json"
+        description: "Manage Frequently Asked Questions"
+        widget: "object"
+        fields:
+          - label: "FAQ Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+          
+      - label: "Designers"
+        name: "designers"
+        file: "src/data/content/designers.json"
+        description: "Manage Designer Cards and Pages"
+        widget: "object"
+        fields:
+          - label: "Designer Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Short Name (Slug)", name: "slug", widget: "string", hint: "Lowercase, no spaces (e.g. justin-alexander). MUST BE UNIQUE." }
+              - { label: "Full Designer Name", name: "name", widget: "string" }
+              - { label: "Eyebrow Text", name: "eyebrow", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Persona", name: "persona", widget: "text" }
+              - { label: "Price Range", name: "priceRange", widget: "string" }
+              - { label: "External Website Link", name: "externalLink", widget: "string" }
+              - { label: "Cover Image", name: "image", widget: "image" }
+
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "src/data/content/testimonials.json"
+        description: "Manage Reviews & Testimonials"
+        widget: "object"
+        fields:
+          - label: "Review Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Author", name: "author", widget: "string" }
+              - { label: "Review Text", name: "text", widget: "text" }

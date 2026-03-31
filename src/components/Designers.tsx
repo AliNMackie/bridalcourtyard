@@ -6,14 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const DESIGNERS = [
-  { name: "Justin Alexander Signature", desc: "Redefining luxury with showmanship and unrivaled attention to detail.", img: "/images/home/justin-alexander-signature-pl/justin-alexander-signature-pi.webp", href: "/justin-alexander" },
-  { name: "Truvelle", desc: "Romantic and modern, light weight fabrics and fresh lines from Vancouver.", img: "/images/home/truvelle/truvelle.jpg", href: "/truvelle" },
-  { name: "Laudae", desc: "Cool and sexy dresses created to make you look and feel your best.", img: "/images/home/laudae/laudae.jpg", href: "/laudae" },
-  { name: "Anne Barge", desc: "Vintage glamour with timeless silhouettes and refined details.", img: "/images/home/anne-barge/anne-barge.jpg", href: "/anne-barge" },
-  { name: "Alyssa Kristin", desc: "Considered and versatile. Soft structure and intended minimalism.", img: "/images/home/alyssa-kristin/alyssa-kristin-m.jpg", href: "/alyssa-kristin" },
-  { name: "Aesling", desc: "Sleek simplicity highlighting natural silhouettes and clean lines.", img: "/images/home/aesling/aesling.jpg", href: "/aesling" },
-];
+import DESIGNERS_DATA from "@/data/content/designers.json";
+const DESIGNERS = Array.isArray(DESIGNERS_DATA) ? DESIGNERS_DATA : DESIGNERS_DATA.items;
 
 export default function Designers() {
   return (
@@ -36,10 +30,10 @@ export default function Designers() {
             key={designer.name}
             className="group"
           >
-            <Link href={designer.href} className="block space-y-6 text-center">
+            <Link href={`/${designer.slug}`} className="block space-y-6 text-center">
               <div className="aspect-[3/4] bg-luxury-gray relative overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2 border border-transparent group-hover:border-luxury-gold/30">
                 <Image
-                  src={designer.img}
+                  src={designer.image}
                   alt={`${designer.name} bridal gown`}
                   fill
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -55,7 +49,7 @@ export default function Designers() {
               
               <div className="space-y-2 transition-colors duration-300 group-hover:text-luxury-gold">
                 <h3 className="text-base md:text-lg font-display tracking-wide uppercase text-charcoal group-hover:text-luxury-gold">{designer.name}</h3>
-                <p className="text-[13px] text-charcoal/50 font-body font-light px-8 leading-relaxed">{designer.desc}</p>
+                <p className="text-[13px] text-charcoal/50 font-body font-light px-8 leading-relaxed line-clamp-2">{designer.description}</p>
               </div>
             </Link>
           </motion.div>

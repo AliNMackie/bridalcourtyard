@@ -1,0 +1,7 @@
+﻿public/images/home/accessories/Accessories.png
+public/images/home/aesling/Aesling.jpg
+public/images/home/alyssa-kristin/alyssa-kristin-m.jpg
+public/images/home/anne-barge/anne-barge.jpg
+public/images/home/justin-alexander-signature-pl/justin-alexander-signature-pi.webp
+public/images/home/laudae/Laudae.jpg
+public/images/home/truvelle/Truvelle.jpg

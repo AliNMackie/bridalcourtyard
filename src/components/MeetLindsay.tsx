@@ -5,6 +5,8 @@ import { Section } from "./ui/Section";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+import Image from "next/image";
+
 export default function MeetLindsay() {
   return (
     <Section id="lindsay" className="bg-blush py-24 md:py-32 overflow-hidden">
@@ -16,14 +18,17 @@ export default function MeetLindsay() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="relative aspect-[4/5] md:aspect-auto md:h-[600px] bg-duck-egg flex items-center justify-center shadow-xl order-2 md:order-1"
+          className="relative aspect-[4/5] md:aspect-auto md:h-[600px] bg-duck-egg flex items-center justify-center shadow-xl order-2 md:order-1 overflow-hidden"
         >
-          <span className="font-body text-xs uppercase tracking-[0.25em] text-charcoal/40">
-            {/* TODO: replace with professional portrait of Lindsay when supplied by client */}
-            Lindsay, founder of The Bridal Courtyard Glasgow
-          </span>
+          <Image
+            src="/images/lindsay.jpg"
+            alt="Lindsay, founder of The Bridal Courtyard"
+            fill
+            className="object-cover"
+            priority
+          />
           {/* Subtle light leak for cinematic feel */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-luxury-gold/5 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-luxury-gold/5 pointer-events-none mix-blend-screen" />
         </motion.div>
 
         {/* Text Column (Right) */}

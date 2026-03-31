@@ -1,6 +1,7 @@
 import DesignerLayout from "@/components/DesignerLayout";
 import { Metadata } from "next";
-import { DESIGNERS } from "@/data/designers";
+import DESIGNERS_DATA from "@/data/content/designers.json";
+const DESIGNERS = Array.isArray(DESIGNERS_DATA) ? DESIGNERS_DATA : DESIGNERS_DATA.items;
 
 const designer = DESIGNERS.find(d => d.slug === "alyssa-kristin")!;
 

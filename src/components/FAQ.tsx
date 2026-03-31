@@ -6,28 +6,8 @@ import { Section } from "./ui/Section";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
 
-const FAQ_ITEMS = [
-  {
-    question: "Do I need an appointment?",
-    answer: "Yes — we are exclusively by appointment. Walk-ins cannot be accommodated."
-  },
-  {
-    question: "How long does an appointment last?",
-    answer: "Around 90 minutes."
-  },
-  {
-    question: "Can I bring guests?",
-    answer: "Absolutely. We recommend bringing one or two people whose opinion you trust."
-  },
-  {
-    question: "What price range are your gowns?",
-    answer: "Our collection ranges from £1,500 to £4,500. We're happy to discuss this when you enquire."
-  },
-  {
-    question: "How far in advance should I book?",
-    answer: "We recommend at least 9–12 months before your wedding date to allow for ordering and fittings."
-  }
-];
+import FAQ_ITEMS_DATA from "@/data/content/faqs.json";
+const FAQ_ITEMS = Array.isArray(FAQ_ITEMS_DATA) ? FAQ_ITEMS_DATA : FAQ_ITEMS_DATA.items;
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);

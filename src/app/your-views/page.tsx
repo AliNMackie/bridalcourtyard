@@ -1,7 +1,8 @@
 
 import YourViewsContent from "@/components/YourViewsContent";
 import { Metadata } from "next";
-import { TESTIMONIALS } from "@/data/testimonials";
+import TESTIMONIALS_DATA from "@/data/content/testimonials.json";
+const TESTIMONIALS = Array.isArray(TESTIMONIALS_DATA) ? TESTIMONIALS_DATA : TESTIMONIALS_DATA.items;
 
 export const metadata: Metadata = {
   title: "Your Views | Recent Bride Reviews Glasgow | Bridal Courtyard",

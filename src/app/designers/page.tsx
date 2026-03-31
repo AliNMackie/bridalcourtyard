@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { DESIGNERS } from "@/data/designers";
+import DESIGNERS_DATA from "@/data/content/designers.json";
+const DESIGNERS = Array.isArray(DESIGNERS_DATA) ? DESIGNERS_DATA : DESIGNERS_DATA.items;
 import { MoveRight } from "lucide-react";
 
 export const metadata: Metadata = {
