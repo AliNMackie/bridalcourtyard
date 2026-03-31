@@ -77,7 +77,7 @@ export default function Navbar() {
                 height={50} 
                 className={cn(
                   "h-10 md:h-12 w-auto transition-all duration-500",
-                  showDark ? "brightness-0" : "brightness-0 invert"
+                  showDark ? "mix-blend-multiply" : "invert mix-blend-screen"
                 )}
                 priority
               />

@@ -15,7 +15,7 @@ export default function Footer() {
               alt="The Bridal Courtyard"
               width={180}
               height={50}
-              className="h-10 w-auto brightness-0 invert"
+              className="h-10 w-auto invert mix-blend-screen"
             />
             <p className="font-body text-[13px] uppercase tracking-[0.15em] text-white/60 font-light">
               Glasgow&apos;s Premier Bridal Boutique

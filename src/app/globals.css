@@ -29,8 +29,8 @@
   --color-blush: var(--blush);
   --color-luxury-gray: var(--luxury-gray);
 
-  --font-display: "BridalDisplay", "Playfair Display", "Didot", Georgia, serif;
-  --font-body: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "BridalDisplay", serif;
+  --font-body: "BridalDisplay", sans-serif;
 
   --spacing-18: 4.5rem;
   --spacing-22: 5.5rem;
@@ -40,7 +40,7 @@
 body {
   background: var(--background);
   color: var(--charcoal);
-  font-family: "Montserrat", sans-serif;
+  font-family: "BridalDisplay", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -50,17 +50,17 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "BridalDisplay", "Playfair Display", serif;
+  font-family: "BridalDisplay", serif;
   font-weight: 400;
   color: var(--charcoal);
 }
 
 .font-display {
-  font-family: "BridalDisplay", "Playfair Display", serif;
+  font-family: "BridalDisplay", serif;
 }
 
 .font-label {
-  font-family: "Montserrat", sans-serif;
+  font-family: "BridalDisplay", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .eyebrow {
   display: block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "BridalDisplay", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 13px;
@@ -115,7 +115,7 @@ input, textarea {
   background-color: #ffffff;
   border: 1px solid #d0c8c0;
   padding: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "BridalDisplay", sans-serif;
   font-size: 15px;
 }
 
