@@ -7,12 +7,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const DESIGNERS = [
-  { name: "Justin Alexander Signature", desc: "Redefining luxury with showmanship and unrivaled attention to detail.", img: "/images/home/justin-alexander-signature-pl/_Justin-Alexander-Signature_PI.webp" },
-  { name: "Truvelle", desc: "Romantic and modern, light weight fabrics and fresh lines from Vancouver.", img: "/images/home/truvelle/Truvelle.jpg" },
-  { name: "Laudae", desc: "Cool and sexy dresses created to make you look and feel your best.", img: "/images/home/laudae/Laudae.jpg" },
-  { name: "Anne Barge", desc: "Vintage glamour with timeless silhouettes and refined details.", img: "/images/home/anne-barge/Anne Barge.jpg" },
-  { name: "Alyssa Kristin", desc: "Considered and versatile. Soft structure and intended minimalism.", img: "/images/home/alyssa-kristin/Alyssa Kristin M.JPG" },
-  { name: "Aesling", desc: "Sleek simplicity highlighting natural silhouettes and clean lines.", img: "/images/home/aesling/Aesling.jpg" },
+  { name: "Justin Alexander Signature", desc: "Redefining luxury with showmanship and unrivaled attention to detail.", img: "/images/home/justin-alexander-signature-pl/justin-alexander-signature-pi.webp" },
+  { name: "Truvelle", desc: "Romantic and modern, light weight fabrics and fresh lines from Vancouver.", img: "/images/home/truvelle/truvelle.jpg" },
+  { name: "Laudae", desc: "Cool and sexy dresses created to make you look and feel your best.", img: "/images/home/laudae/laudae.jpg" },
+  { name: "Anne Barge", desc: "Vintage glamour with timeless silhouettes and refined details.", img: "/images/home/anne-barge/anne-barge.jpg" },
+  { name: "Alyssa Kristin", desc: "Considered and versatile. Soft structure and intended minimalism.", img: "/images/home/alyssa-kristin/alyssa-kristin-m.jpg" },
+  { name: "Aesling", desc: "Sleek simplicity highlighting natural silhouettes and clean lines.", img: "/images/home/aesling/aesling.jpg" },
 ];
 
 export default function Designers() {
