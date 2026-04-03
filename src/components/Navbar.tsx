@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import Logo from "./ui/Logo";
 
 const NAV_LINKS = [
   { href: "/our-boutique", label: "Our Boutique" },
@@ -69,18 +70,8 @@ export default function Navbar() {
         >
           <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="relative flex items-center">
-              <Image 
-                src="/logo.png" 
-                alt="The Bridal Courtyard" 
-                width={180} 
-                height={50} 
-                className={cn(
-                  "h-10 md:h-12 w-auto transition-all duration-500",
-                  showDark ? "mix-blend-multiply" : "invert mix-blend-screen"
-                )}
-                priority
-              />
+            <Link href="/" className="relative flex items-center group">
+              <Logo light={!showDark} className="scale-90 md:scale-100 origin-left" />
             </Link>
 
             {/* Desktop Links */}
@@ -154,13 +145,7 @@ export default function Navbar() {
         >
           {/* Close */}
           <div className="flex items-center justify-between p-6 border-b border-white/10">
-            <Image
-              src="/logo.png"
-              alt="The Bridal Courtyard"
-              width={140}
-              height={40}
-              className="h-8 w-auto brightness-0 invert"
-            />
+            <Logo light={true} className="scale-75 origin-left" />
             <button
               onClick={() => setIsMobileOpen(false)}
               className="text-white/60 hover:text-white transition-colors"

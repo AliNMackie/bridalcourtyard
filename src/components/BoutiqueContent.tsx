@@ -10,33 +10,15 @@ export default function BoutiqueContent() {
     <Section id="boutique-tour" className="bg-white py-24 md:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
-        <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center">
-          {/* Image Side */}
+        <div className="flex flex-col items-center max-w-3xl mx-auto text-center">
           <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
-            className="relative aspect-[3/4] bg-duck-egg overflow-hidden shadow-2xl"
-          >
-            <Image 
-              src="/hero.png" 
-              alt="The Bridal Courtyard Entrance" 
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-black/5 mix-blend-overlay" />
-          </motion.div>
-
-          {/* Text Side */}
-          <motion.div 
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: true }}
             className="space-y-10"
           >
-            <div className="space-y-4">
+            <div className="space-y-4 flex flex-col items-center">
               <span className="eyebrow">Our Space</span>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal">The Experience</h2>
               <div className="gold-rule" />

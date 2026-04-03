@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import Logo from "./ui/Logo";
 
 export default function Footer() {
   return (
@@ -10,13 +11,7 @@ export default function Footer() {
         {/* Column 1: Brand & Contact */}
         <div className="space-y-8">
           <div className="space-y-4">
-            <Image
-              src="/logo.png"
-              alt="The Bridal Courtyard"
-              width={180}
-              height={50}
-              className="h-10 w-auto invert mix-blend-screen"
-            />
+            <Logo light={true} className="items-start text-left origin-left" />
             <p className="font-body text-[13px] uppercase tracking-[0.15em] text-white/60 font-light">
               Glasgow&apos;s Premier Bridal Boutique
             </p>
