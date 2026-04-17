@@ -100,80 +100,31 @@ export default function ContactPage() {
               </div>
             </div>
             
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-1">
-                  <label htmlFor="first-name" className="sr-only">First Name</label>
-                  <input 
-                    id="first-name"
-                    type="text" 
-                    placeholder="First Name" 
-                    className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                    required
-                  />
-                </div>
-                <div className="space-y-1">
-                  <label htmlFor="last-name" className="sr-only">Last Name</label>
-                  <input 
-                    id="last-name"
-                    type="text" 
-                    placeholder="Last Name" 
-                    className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                    required
-                  />
-                </div>
-              </div>
-              <div className="space-y-1">
-                <label htmlFor="email-address" className="sr-only">Email Address</label>
-                <input 
-                  id="email-address"
-                  type="email" 
-                  placeholder="Email Address" 
-                  className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                  required
-                />
-              </div>
-              <div className="space-y-1">
-                <label htmlFor="phone-number" className="sr-only">Phone Number</label>
-                <input 
-                  id="phone-number"
-                  type="tel" 
-                  placeholder="Phone Number" 
-                  className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                  required
-                />
-              </div>
-              <div className="space-y-1">
-                <label htmlFor="preferred-date" className="text-[11px] uppercase tracking-widest text-charcoal/40 ml-1">Preferred Date</label>
-                <input 
-                  id="preferred-date"
-                  type="date" 
-                  className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors" 
-                  required
-                />
-              </div>
-              <div className="space-y-1">
-                <label htmlFor="message" className="sr-only">Message for Lindsay</label>
-                <textarea 
-                  id="message"
-                  placeholder="Anything you'd like Lindsay to know?" 
-                  rows={3}
-                  className="w-full bg-white border border-[#d0c8c0] px-4 py-4 font-body text-[15px] focus:outline-none focus:border-luxury-gold transition-colors resize-none"
-                />
-              </div>
-              
-              <div className="pt-4 space-y-4">
-                <button 
-                  type="submit"
-                  className="w-full bg-charcoal text-white py-5 text-[13px] uppercase tracking-[0.2em] font-body font-medium hover:bg-luxury-gold transition-all duration-300 shadow-lg flex items-center justify-center gap-2 group"
+            <div className="w-full relative min-h-[1200px]">
+              <iframe
+                src="https://app.bridallive.com/bl-server/appointmentRequest/c8a61cc3.shtml?lang=en"
+                title="Bridal appointment request form"
+                width="100%"
+                height="1200"
+                frameBorder="0"
+                loading="lazy"
+                className="w-full border-0 min-h-[1200px]"
+              ></iframe>
+            </div>
+            
+            <div className="pt-2 text-center">
+              <p className="font-body text-[12px] text-charcoal/70">
+                Having trouble with the form?{" "}
+                <a 
+                  href="https://app.bridallive.com/bl-server/appointmentRequest/c8a61cc3.shtml?lang=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-luxury-gold hover:underline"
                 >
-                  Send Request <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="w-4 h-4 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                </button>
-                <p className="text-center font-body text-[13px] italic text-charcoal/50">
-                  Lindsay will be in touch within one working day.
-                </p>
-              </div>
-            </form>
+                  Click here to open it in a new tab.
+                </a>
+              </p>
+            </div>
           </div>
         </div>
 
