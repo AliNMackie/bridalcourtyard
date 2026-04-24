@@ -1,64 +1,64 @@
 {
   "items": [
     {
-      "slug": "justin-alexander",
-      "name": "Justin Alexander Signature",
-      "eyebrow": "The Epitome of Elegance",
-      "description": "Justin Alexander Signature redefines luxury. With its focus on opulence and drama, this collection is designed for the bride who wants to make a grand entrance. Think hand-placed lace, intricate beadwork, and silhouettes that command attention.",
-      "persona": "The Grace Kelly of the 21st century—timeless, regal, and breathtakingly sophisticated.",
-      "priceRange": "£2,500 - £4,500",
-      "externalLink": "https://www.justinalexander.com/justin-alexander-signature/",
-      "image": "/images/home/justin-alexander-signature-pl/justin-alexander-signature-pi.webp"
-    },
-    {
       "slug": "truvelle",
       "name": "Truvelle",
       "eyebrow": "Effortless & Modern",
-      "description": "Based in Vancouver, Truvelle creates gowns for the bride who wants something different. With an emphasis on comfort and individuality, their designs feature unique laces, unconventional silhouettes, and a hint of sparkle.",
-      "persona": "The creative spirit—cool, calm, and effortlessly chic.",
-      "priceRange": "£2,000 - £3,200",
+      "description": "The Bridal Courtyard are exclusive stockists of Truvelle in Scotland.\n\nIn 2013, designer Gaby Bayona founded the Truvelle brand from her apartment living room. Since then, this proud Vancouver-based label has become something truly special. Think romantic and modern, lightweight fabrics and fresh lines.",
+      "persona": "The Truvelle bride is laid back and effortlessly cool — a confident woman who doesn't want to change her style for her wedding day.",
+      "priceRange": "£2,100 – £2,700",
       "externalLink": "https://truvelle.com/",
       "image": "/images/home/truvelle/truvelle.jpg"
     },
     {
       "slug": "aesling",
       "name": "Aesling",
-      "eyebrow": "Minimalist Architecture",
-      "description": "Aesling is for the minimalist bride. Each gown is a study in clean lines and structural integrity. Crafted with precision in Canada, these dresses celebrate the beauty of simplicity without sacrificing impact.",
-      "persona": "The architect of style—bold, precise, and understated.",
-      "priceRange": "£1,800 - £2,800",
+      "eyebrow": "Sleek Simplicity",
+      "description": "The Bridal Courtyard are exclusive stockists of Aesling in Scotland.\n\nThe Aesling collection is full of sleek simplicity, with a focus on highlighting natural silhouettes and clean lines. Designs are intentionally crafted to be relevant and contemporary while sophisticated and timeless. The options to add custom pieces with sleeves, scarves and blouses means that each bride can truly create her own bespoke look.",
+      "persona": "The Aesling bride is chic and uncomplicated. She loves simplicity with a quirk and unique edge.",
+      "priceRange": "£2,400 – £2,800",
       "externalLink": "https://aesling.com/",
       "image": "/images/home/aesling/aesling.jpg"
     },
     {
-      "slug": "anne-barge",
-      "name": "Blue Willow by Anne Barge",
-      "eyebrow": "Classic Romance",
-      "description": "Blue Willow by Anne Barge is the essence of classic bridal romance. This collection offers the signature Anne Barge aesthetic—timeless silhouettes and refined details—at a more accessible price point.",
-      "persona": "The romantic dreamer—sweet, elegant, and perpetually in style.",
-      "priceRange": "£2,200 - £3,500",
-      "externalLink": "https://www.annebarge.com/collections/blue-willow",
-      "image": "/images/home/anne-barge/anne-barge.jpg"
+      "slug": "laudae",
+      "name": "LAUDAE",
+      "eyebrow": "Design & Sustainability",
+      "description": "The Bridal Courtyard are exclusive stockists of Laudae in Scotland.\n\nDesign and sustainability obsessed, Canadian-based Laudae create cool and sexy dresses to celebrate the person in them. With stretch linings, soft fabrics and secret support through boning, these gowns are created to make you look and feel your best.",
+      "persona": "The Laudae bride is bold and babely — a spirited woman who is environmentally conscious.",
+      "priceRange": "£2,100 – £2,500",
+      "externalLink": "https://www.laudae.com/",
+      "image": "/images/home/laudae/laudae.jpg"
     },
     {
       "slug": "alyssa-kristin",
       "name": "Alyssa Kristin",
-      "eyebrow": "Sleek & Statement",
-      "description": "Alyssa Kristin gowns are designed to celebrate the female form. Known for their incredible fit and stunning crepe fabrics, these dresses are for the bride who wants a sleek, confident, and sexy look.",
-      "persona": "The confident muse—daring, sleek, and undeniably stunning.",
-      "priceRange": "£2,400 - £3,800",
+      "eyebrow": "Considered & Versatile",
+      "description": "The Bridal Courtyard are exclusive stockists of Alyssa Kristin in Scotland.\n\nMade with love in Chicago, the Alyssa Kristin collection is renowned for being considered and versatile. Soft structure, intended minimalism and stunning fabrics — each bride can choose to customise with splits, buttons, sleeve and skirt options, creating the gown that represents exactly who she is.",
+      "persona": "The Alyssa Kristin bride is confident and fashion forward. She loves attention to detail and wants to wear her gown, her way.",
+      "priceRange": "£2,700 – £3,200",
       "externalLink": "https://www.alyssakristin.com/",
       "image": "/images/home/alyssa-kristin/alyssa-kristin-m.jpg"
     },
     {
-      "slug": "laudae",
-      "name": "LAUDAE",
-      "eyebrow": "Eco-Conscious Edge",
-      "description": "LAUDAE is for the bride who cares about where her dress comes from. Designed and made in Vancouver with an eco-conscious mindset, these gowns feature stretchy liners and modern laces for ultimate comfort and style.",
-      "persona": "The conscious rebel—spirited, comfortable, and forward-thinking.",
-      "priceRange": "£1,900 - £2,900",
-      "externalLink": "https://www.laudae.com/",
-      "image": "/images/home/laudae/laudae.jpg"
+      "slug": "justin-alexander",
+      "name": "Justin Alexander Signature",
+      "eyebrow": "Opulence & Drama",
+      "description": "Justin Alexander Signature redefines luxury. This collection is filled with showmanship and unrivalled attention to detail. With its focus on opulence and drama, these gowns are designed for the modern bride seeking a wedding gown that expresses her lavish and on-trend sense of style.",
+      "persona": "The Justin Alexander Signature bride is a confident, self-assured and elegant woman.",
+      "priceRange": "£1,995 – £2,750",
+      "externalLink": "https://www.justinalexander.com/justin-alexander-signature/",
+      "image": "/images/home/justin-alexander-signature-pl/justin-alexander-signature-pi.webp"
+    },
+    {
+      "slug": "anne-barge",
+      "name": "Blue Willow by Anne Barge",
+      "eyebrow": "Vintage Glamour",
+      "description": "The Bridal Courtyard are exclusive stockists of Anne Barge in the UK.\n\nAnne Barge collections are inspired by the lasting allure of vintage glamour with timeless silhouettes, premier fabrics and refined details.",
+      "persona": "The Blue Willow by Anne Barge bride is a modern woman with classic taste — discerning and elegant with a love of structured, clean tailoring.",
+      "priceRange": "£2,000 – £3,000",
+      "externalLink": "https://www.annebarge.com/collections/blue-willow",
+      "image": "/images/home/anne-barge/anne-barge.jpg"
     }
   ]
 }

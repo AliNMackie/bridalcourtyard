@@ -9,13 +9,14 @@ import { MoveRight, ExternalLink } from "lucide-react";
 
 interface DesignerLayoutProps {
   name: string;
-  body: string;
+  description: string;
+  persona: string;
   priceRange: string;
   externalLink: string;
   image: string;
 }
 
-export default function DesignerLayout({ name, body, priceRange, externalLink, image }: DesignerLayoutProps) {
+export default function DesignerLayout({ name, description, persona, priceRange, externalLink, image }: DesignerLayoutProps) {
   return (
     <div className="pt-20">
       <Section className="bg-white py-24 md:py-32 overflow-hidden">
@@ -39,8 +40,9 @@ export default function DesignerLayout({ name, body, priceRange, externalLink, i
                 </h1>
               </div>
               
-              <div className="space-y-6 text-charcoal/80 font-body text-base md:text-lg leading-relaxed max-w-xl whitespace-pre-line">
-                {body}
+              <div className="space-y-4 text-charcoal/80 font-body text-base md:text-lg leading-relaxed max-w-xl">
+                <p>{description}</p>
+                <p className="text-charcoal/60 italic">{persona}</p>
               </div>
             </div>
 

@@ -14,7 +14,8 @@ export default function JustinAlexanderPage() {
   return (
     <DesignerLayout 
       name={designer.name}
-      body={`${designer.description}\n\n${designer.persona}`}
+      description={designer.description}
+      persona={designer.persona}
       priceRange={designer.priceRange}
       externalLink={designer.externalLink}
       image={designer.image}
