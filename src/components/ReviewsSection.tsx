@@ -52,11 +52,11 @@ export default function ReviewsSection() {
 
         <div className="text-center">
           <Link 
-            href="https://g.co/kgs/bridal-courtyard" 
+            href="https://www.google.com/maps/search/The+Bridal+Courtyard+48+St+Andrews+Square+Glasgow+G1+5PP" 
             target="_blank"
+            rel="noopener noreferrer"
             className="inline-block border border-luxury-gold text-luxury-gold px-10 py-4 text-[12px] uppercase tracking-[0.2em] font-medium hover:bg-luxury-gold hover:text-white transition-all duration-300"
           >
-            {/* TODO: replace with actual Google Maps review link when confirmed */}
             Read all reviews on Google &rarr;
           </Link>
         </div>

@@ -9,15 +9,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
         
         {/* Column 1: Brand & Contact */}
-        <div className="space-y-8">
-          <div className="space-y-4">
-            <Logo light={true} className="items-start text-left origin-left" />
+        <div className="space-y-8 flex flex-col items-center text-center md:items-start md:text-left">
+          <div className="space-y-4 w-full">
+            <Logo light={true} />
             <p className="font-body text-[13px] uppercase tracking-[0.15em] text-white/60 font-light">
               Glasgow&apos;s Premier Bridal Boutique
             </p>
           </div>
           
-          <div className="space-y-6 text-sm md:text-base font-body font-light text-white/70 leading-relaxed">
+          <div className="space-y-6 text-sm md:text-base font-body font-light text-white/70 leading-relaxed w-full">
             <p>
               48 St Andrew&apos;s Square<br />
               Glasgow G1 5PP

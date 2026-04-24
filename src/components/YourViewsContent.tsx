@@ -49,7 +49,7 @@ export default function YourViewsContent({ reviews }: YourViewsContentProps) {
 
       <div className="text-center mt-24">
         <a 
-          href="https://g.co/kgs/bridal-courtyard" 
+          href="https://www.google.com/maps/search/The+Bridal+Courtyard+48+St+Andrews+Square+Glasgow+G1+5PP" 
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block border border-luxury-gold text-luxury-gold px-12 py-5 text-[13px] uppercase tracking-[0.2em] font-medium hover:bg-luxury-gold hover:text-white transition-all duration-300 shadow-md"
