@@ -19,6 +19,11 @@ export default function AlyssaKristinPage() {
       priceRange={designer.priceRange}
       externalLink={designer.externalLink}
       image={designer.image}
+      gallery={[
+        "/images/home/alyssa-kristin/AlyssaKristin_Final-6273.jpg",
+        "/images/home/alyssa-kristin/Celine 11.jpg",
+        "/images/home/alyssa-kristin/Gemma 02.JPG",
+      ]}
     />
   );
 }

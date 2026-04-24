@@ -72,8 +72,8 @@ export default function AccessoriesPage() {
 
           <div className="relative aspect-square bg-duck-egg overflow-hidden shadow-2xl">
             <Image
-              src="/gallery-detail.png"
-              alt="Jimmy Choo bridal shoe detail"
+              src="/images/home/accessories/Window Choo Shoes.webp"
+              alt="Jimmy Choo bridal shoes at The Bridal Courtyard"
               fill
               className="object-cover"
             />

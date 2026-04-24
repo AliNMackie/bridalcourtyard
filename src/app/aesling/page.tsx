@@ -19,6 +19,12 @@ export default function AeslingPage() {
       priceRange={designer.priceRange}
       externalLink={designer.externalLink}
       image={designer.image}
+      gallery={[
+        "/images/aesling/Athena-1.jpg",
+        "/images/aesling/Camille-1.jpg",
+        "/images/aesling/Morgan-straight-sleeve-1.jpg",
+        "/images/aesling/Rhea-1.jpg",
+      ]}
     />
   );
 }

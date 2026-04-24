@@ -14,9 +14,10 @@ interface DesignerLayoutProps {
   priceRange: string;
   externalLink: string;
   image: string;
+  gallery?: string[];
 }
 
-export default function DesignerLayout({ name, description, persona, priceRange, externalLink, image }: DesignerLayoutProps) {
+export default function DesignerLayout({ name, description, persona, priceRange, externalLink, image, gallery }: DesignerLayoutProps) {
   return (
     <div className="pt-20">
       <Section className="bg-white py-24 md:py-32 overflow-hidden">
@@ -72,7 +73,7 @@ export default function DesignerLayout({ name, description, persona, priceRange,
             </div>
           </motion.div>
 
-          {/* Image Column */}
+          {/* Primary Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -92,6 +93,38 @@ export default function DesignerLayout({ name, description, persona, priceRange,
           </motion.div>
         </div>
       </Section>
+
+      {/* Gallery Strip — only renders when gallery images are supplied */}
+      {gallery && gallery.length > 0 && (
+        <section className="bg-luxury-gray py-16 md:py-24 border-t border-gray-100">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-10 space-y-3">
+              <span className="eyebrow">The Collection</span>
+              <div className="w-12 h-[1px] bg-luxury-gold mx-auto" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              {gallery.map((src, i) => (
+                <motion.div
+                  key={src}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: i * 0.08 }}
+                  viewport={{ once: true }}
+                  className="relative aspect-[3/4] bg-duck-egg overflow-hidden group"
+                >
+                  <Image
+                    src={src}
+                    alt={`${name} gown ${i + 1}`}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </div>
   );
 }

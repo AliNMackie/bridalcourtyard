@@ -19,6 +19,10 @@ export default function AnneBargePage() {
       priceRange={designer.priceRange}
       externalLink={designer.externalLink}
       image={designer.image}
+      gallery={[
+        "/images/home/anne-barge/callanwoldeAnne Barge.jpg",
+        "/images/home/anne-barge/Naomi-Blue-Willow-Anne-Barge.jpg",
+      ]}
     />
   );
 }

@@ -18,8 +18,9 @@ export default function Hero() {
             transition={{ duration: 15, ease: "easeOut" }}
             className="relative w-full h-full"
           >
+            {/* HERO IMAGE — to swap, change the src path below to any image in /public/images/home/ */}
             <Image
-              src="https://bridalcourtyard.com/wp-content/uploads/2022/09/JAS_99241-SS23-scaled.jpg"
+              src="/images/home/DSC06414.jpg"
               alt="Bridal gown editorial photography"
               fill
               className="object-cover object-[center_20%]"

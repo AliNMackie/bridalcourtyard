@@ -19,6 +19,12 @@ export default function TruvellePage() {
       priceRange={designer.priceRange}
       externalLink={designer.externalLink}
       image={designer.image}
+      gallery={[
+        "/images/truvelle/Cassie-4.jpg",
+        "/images/truvelle/Emmeline-1.jpg",
+        "/images/truvelle/Iris-4.jpg",
+        "/images/truvelle/Lillie-offwhite-7 (1).jpg",
+      ]}
     />
   );
 }

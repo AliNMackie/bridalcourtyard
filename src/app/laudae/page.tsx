@@ -19,6 +19,12 @@ export default function LaudaePage() {
       priceRange={designer.priceRange}
       externalLink={designer.externalLink}
       image={designer.image}
+      gallery={[
+        "/images/laudae/Audrey-1.jpg",
+        "/images/laudae/Grace-1.jpg",
+        "/images/laudae/Rhiannon-nolace-4.jpg",
+        "/images/laudae/Valerie-sleeve-1.jpg",
+      ]}
     />
   );
 }
