@@ -21,7 +21,7 @@ export default function AnneBargePage() {
       image={designer.image}
       gallery={[
         "/images/home/anne-barge/callanwoldeAnne Barge.jpg",
-        "/images/home/anne-barge/Naomi-Blue-Willow-Anne-Barge.jpg",
+        "/images/home/anne-barge/Naomi-Blue-Willow-Anne-Barge.webp",
       ]}
     />
   );
