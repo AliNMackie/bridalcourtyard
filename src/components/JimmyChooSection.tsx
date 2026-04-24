@@ -44,9 +44,10 @@ export default function JimmyChooSection() {
             <div className="gold-rule" />
           </div>
 
-          <p className="font-body text-lg text-white/70 leading-relaxed font-light">
-            At The Bridal Courtyard, we love to help you pull your entire bridal look together. For us, that means show-stopping shoes. Pull together your full look by trying on the Jimmy Choo bridal collection with all of our gowns — then our friends at Jimmy Choo will take great care of you at your own appointment. Is there anything more special than saying &lsquo;I do&rsquo; in Choo?
-          </p>
+          <div className="space-y-4 font-body text-lg text-white/70 leading-relaxed font-light">
+            <p>At The Bridal Courtyard, we love to help you pull your entire bridal look together. For us, that means show stopping shoes. Pull together your full look by trying on the Jimmy Choo bridal collection shoes with all of our gowns.</p>
+            <p>If you love what you see, our friends at Jimmy Choo will then do the rest — taking great care of you at your own appointment. Is there anything more special than saying &lsquo;I do&rsquo; in Choo?</p>
+          </div>
 
           <Link
             href="/accessories"

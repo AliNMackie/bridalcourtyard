@@ -26,10 +26,10 @@ export default function AccessoriesPage() {
           </h1>
           <div className="gold-rule gold-rule-center" />
           <p className="font-body text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
-            At The Bridal Courtyard, we love to help you pull your entire bridal look together. For us that means a few things on the must-have list — a beautiful veil, statement earrings and show-stopping shoes.
+            At The Bridal Courtyard, we love to help you pull your entire bridal look together. For us that means a few things on the must have list — a beautiful veil, statement earrings and show stopping shoes.
           </p>
           <p className="font-body text-sm text-white/50 uppercase tracking-[0.2em]">
-            Request your appointment to view our accessories via the Booking Request page — choose &lsquo;Styling Appointment&rsquo;
+            Request your appointment to view our accessories via the Booking Request page, choose &lsquo;Styling Appointment&rsquo;
           </p>
         </div>
       </section>
