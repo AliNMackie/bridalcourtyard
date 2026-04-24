@@ -58,10 +58,12 @@ export default function AccessoriesPage() {
           </div>
 
           <div className="relative aspect-[3/4] bg-duck-egg overflow-hidden shadow-2xl">
-            {/* TODO: Add Jade Oi Studio image when supplied — place in /public/images/accessories/ */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="font-display text-2xl text-charcoal/20 italic">Jade Oi Studio</span>
-            </div>
+            <Image
+              src="/images/home/accessories/accessories.png"
+              alt="Jade Oi Studio bridal jewellery and accessories"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
