@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     title: "Bridal Courtyard | Luxury Bridal Boutique Glasgow",
     description: "Exclusive stockists of Justin Alexander Signature, Truvelle, Laudae, and more.",
   },
+  metadataBase: new URL("https://bridalcourtyard.com"),
 };
 
 export default function RootLayout({
@@ -41,6 +42,7 @@ export default function RootLayout({
                 "postalCode": "G1 5PP",
                 "addressCountry": "GB"
               },
+              "image": "https://bridalcourtyard.com/logo.png",
               "telephone": "+441412378680",
               "url": "https://bridalcourtyard.com",
               "aggregateRating": {

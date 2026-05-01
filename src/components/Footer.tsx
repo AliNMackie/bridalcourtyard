@@ -11,7 +11,9 @@ export default function Footer() {
         {/* Column 1: Brand & Contact */}
         <div className="space-y-8 flex flex-col items-center text-center md:items-start md:text-left">
           <div className="space-y-4 w-full">
-            <Logo light={true} />
+            <Link href="/" aria-label="Home" className="inline-block">
+              <Logo light={true} />
+            </Link>
             <p className="font-body text-[13px] uppercase tracking-[0.15em] text-white/60 font-light">
               Glasgow&apos;s Premier Bridal Boutique
             </p>
@@ -45,6 +47,7 @@ export default function Footer() {
             Navigate
           </h4>
           <nav className="flex flex-col space-y-4 font-body text-sm md:text-base font-light text-white/70">
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <Link href="/our-boutique" className="hover:text-white transition-colors">Our Boutique</Link>
             <Link href="/designers" className="hover:text-white transition-colors">Our Designers</Link>
             <Link href="/accessories" className="hover:text-white transition-colors">Accessories</Link>
@@ -70,9 +73,8 @@ export default function Footer() {
             Social
           </h4>
           <nav className="flex flex-col space-y-4 font-body text-sm md:text-base font-light text-white/70">
-            <a href="#" className="hover:text-white transition-colors">Instagram</a>
-            <a href="#" className="hover:text-white transition-colors">Facebook</a>
-            <a href="#" className="hover:text-white transition-colors">Pinterest</a>
+            <a href="https://www.instagram.com/thebridalcourtyard/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
+            <a href="https://www.facebook.com/TheBridalCourtyard/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Facebook</a>
           </nav>
           
           <div className="pt-8 border-t border-white/5">
