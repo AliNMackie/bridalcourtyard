@@ -53,7 +53,7 @@ export default function Navbar() {
         {/* Announcement Bar */}
         <div className="bg-duck-egg w-full py-2 px-4 text-center border-b border-luxury-gold/10">
           <p className="font-body text-[10px] md:text-xs uppercase tracking-[0.15em] text-charcoal">
-            Glasgow&apos;s Premier Bridal Boutique &middot; 48 St Andrew&apos;s Square &middot; <a href="tel:01412378680" className="hover:underline hover:text-luxury-gold transition-colors">0141 237 8680</a>
+            Glasgow&apos;s Premier Bridal Boutique &middot; 48 St Andrew&apos;s Square &middot; <a href="tel:01412378680" className="hover:underline hover:text-charcoal/60 transition-colors">0141 237 8680</a>
           </p>
         </div>
 
@@ -83,7 +83,7 @@ export default function Navbar() {
                 <Link 
                   key={link.href} 
                   href={link.href} 
-                  className="hover:text-luxury-gold transition-colors"
+                  className="hover:text-duck-egg transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -160,7 +160,7 @@ export default function Navbar() {
             <Link
               href="/"
               onClick={() => setIsMobileOpen(false)}
-              className="block py-3 text-[13px] uppercase tracking-[0.2em] font-light text-white/70 hover:text-luxury-gold transition-colors border-b border-white/5"
+              className="block py-3 text-[13px] uppercase tracking-[0.2em] font-light text-white/70 hover:text-duck-egg transition-colors border-b border-white/5"
             >
               Home
             </Link>
@@ -169,7 +169,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileOpen(false)}
-                className="block py-3 text-[13px] uppercase tracking-[0.2em] font-light text-white/70 hover:text-luxury-gold transition-colors border-b border-white/5"
+                className="block py-3 text-[13px] uppercase tracking-[0.2em] font-light text-white/70 hover:text-duck-egg transition-colors border-b border-white/5"
               >
                 {link.label}
               </Link>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Logo from "@/components/ui/Logo";
 
 export default function Hero() {
   return (
@@ -38,13 +39,9 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+            className="flex justify-center py-12 md:py-20 mb-8"
           >
-            <h1 className="font-display text-7xl md:text-9xl !text-white mb-2 leading-[0.9] tracking-tighter drop-shadow-sm">
-              Confidently
-            </h1>
-            <h1 className="font-display text-7xl md:text-9xl !text-white mb-8 leading-[0.9] italic tracking-tighter drop-shadow-sm">
-              Chic.
-            </h1>
+            <Logo light={true} className="scale-[2] md:scale-[2.5] origin-center drop-shadow-sm" />
           </motion.div>
 
           {/* Elegant gold rule with animation */}
@@ -92,7 +89,7 @@ export default function Hero() {
       {/* Reviews Strip */}
       <div className="bg-duck-egg w-full py-5 text-center border-y border-luxury-gold/20 shadow-sm relative z-20">
         <p className="font-body text-xs md:text-[13px] uppercase tracking-[0.2em] text-charcoal font-medium">
-          <span className="text-luxury-gold mr-2 text-sm italic">★★★★★</span> 143 Five-Star Google Reviews &middot; Exclusively by Appointment &middot; Glasgow City Centre
+          <span className="text-luxury-gold mr-2 text-sm">★★★★★</span> Five-Star Google Reviews &middot; Exclusively by Appointment &middot; Glasgow City Centre
         </p>
       </div>
     </div>

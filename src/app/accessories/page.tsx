@@ -26,7 +26,7 @@ export default function AccessoriesPage() {
           </h1>
           <div className="gold-rule gold-rule-center" />
           <p className="font-body text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
-            At The Bridal Courtyard, we love to help you pull your entire bridal look together. For us that means a few things on the must have list — a beautiful veil, statement earrings and show stopping shoes.
+            At The Bridal Courtyard, we love to help you style your entire bridal look. For us that means a few things on the must have list — a beautiful veil, statement earrings and show stopping shoes.
           </p>
           <p className="font-body text-sm text-white/50 uppercase tracking-[0.2em]">
             Request your appointment to view our accessories via the Booking Request page, choose &lsquo;Styling Appointment&rsquo;
@@ -92,7 +92,7 @@ export default function AccessoriesPage() {
 
             <div className="space-y-6 font-body text-charcoal/70 text-base md:text-lg leading-relaxed">
               <p>
-                Pull together your full look by trying on the Jimmy Choo bridal collection shoes with all of our gowns. If you love what you see, then our friends at Jimmy Choo will then do the rest by taking great care of you at your own appointment.
+                Pull together your full look by trying on the Jimmy Choo bridal collection shoes with all of our gowns in the boutique. If you love what you see, our friends at Jimmy Choo will then do the rest — taking great care of you at your own appointment at their partner store.
               </p>
               <p>
                 Is there anything more special than saying &lsquo;I do&rsquo; in Choo?

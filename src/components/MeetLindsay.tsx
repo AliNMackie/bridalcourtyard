@@ -41,7 +41,7 @@ export default function MeetLindsay() {
         >
           <div className="space-y-4">
             <span className="eyebrow !text-charcoal/60">The woman behind the boutique</span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-7xl text-charcoal leading-tight italic">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-7xl text-charcoal leading-tight">
               Lindsay
             </h2>
             <p className="font-body text-[12px] uppercase tracking-[0.2em] text-luxury-gold font-medium">
@@ -63,8 +63,8 @@ export default function MeetLindsay() {
           </div>
 
           <div className="space-y-6">
-            <p className="font-body text-[15px] italic text-charcoal/70">
-              Mentioned by name in over 100 of our 143 Google reviews.
+            <p className="font-body text-[15px] text-charcoal/70">
+              Loved by our brides on Google.
             </p>
             <Link 
               href="#contact" 

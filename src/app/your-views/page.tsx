@@ -6,7 +6,7 @@ const TESTIMONIALS = Array.isArray(TESTIMONIALS_DATA) ? TESTIMONIALS_DATA : TEST
 
 export const metadata: Metadata = {
   title: "Your Views | Recent Bride Reviews Glasgow | Bridal Courtyard",
-  description: "Read what our brides say about their experience at The Bridal Courtyard. Proud to hold 143 five-star Google reviews.",
+  description: "Read what our brides say about their experience at The Bridal Courtyard. Proud to hold five-star Google reviews.",
 };
 
 export default function YourViewsPage() {

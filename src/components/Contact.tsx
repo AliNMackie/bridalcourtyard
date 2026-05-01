@@ -26,7 +26,7 @@ export default function Contact() {
               <a 
                 href="https://maps.google.com/maps?q=48+St+Andrews+Square+Glasgow+G1+5PP" 
                 target="_blank" 
-                className="inline-block text-[13px] text-luxury-gold hover:underline tracking-wider"
+                className="inline-block text-[13px] text-charcoal hover:text-duck-egg transition-all cursor-pointer tracking-wider"
               >
                 Open in Google Maps &rarr;
               </a>
@@ -36,7 +36,7 @@ export default function Contact() {
               <p className="font-medium text-xs uppercase tracking-widest text-luxury-gold">Phone</p>
               <a 
                 href="tel:01412378680" 
-                className="text-lg text-luxury-gold hover:underline transition-all cursor-pointer block"
+                className="text-lg text-charcoal hover:text-duck-egg transition-all cursor-pointer block"
               >
                 0141 237 8680
               </a>
@@ -46,14 +46,14 @@ export default function Contact() {
               <p className="font-medium text-xs uppercase tracking-widest text-luxury-gold">Email</p>
               <a 
                 href="mailto:info@bridalcourtyard.com" 
-                className="text-lg text-luxury-gold hover:underline transition-all cursor-pointer block"
+                className="text-lg text-charcoal hover:text-duck-egg transition-all cursor-pointer block"
               >
                 info@bridalcourtyard.com
               </a>
             </div>
 
             <div className="pt-4">
-              <p className="text-sm italic text-charcoal/60 leading-relaxed font-body">
+              <p className="text-sm text-charcoal/60 leading-relaxed font-body">
                 Exclusively by appointment. <br className="hidden md:block" /> Lindsay typically responds to enquiries within one working day.
               </p>
             </div>
@@ -78,7 +78,7 @@ export default function Contact() {
             <div className="space-y-6">
               <span className="eyebrow mx-auto">Book Your Experience</span>
               <h2 className="font-display text-4xl md:text-5xl text-charcoal uppercase leading-tight">
-                Ready to find <br/><span className="italic font-serif normal-case">your dream</span> gown?
+                READY TO FIND <br/>YOUR GOWN?
               </h2>
               
               <div className="space-y-4 font-body text-[14px] text-charcoal/70 leading-relaxed max-w-sm mx-auto pt-4 pb-8">

@@ -20,13 +20,13 @@ export default function JimmyChooSection() {
           className="relative aspect-square border border-white/10 p-4 md:p-12 overflow-hidden order-2 md:order-1"
         >
            <Image 
-             src="/boutique.png" 
+             src="/images/home/accessories/Window Choo Shoes.webp" 
              alt="Jimmy Choo Bridal Detail"
              fill
              className="object-cover opacity-60 mix-blend-overlay"
            />
            <div className="relative h-full w-full border border-white/20 flex flex-col items-center justify-center space-y-4">
-              <span className="font-display italic text-4xl md:text-6xl text-white/40 tracking-tighter">&apos;I do&apos; in Choo</span>
+              <span className="font-display text-4xl md:text-6xl text-white/40 tracking-tighter">&apos;I do&apos; in Choo</span>
               <div className="w-16 h-[1px] bg-luxury-gold" />
            </div>
         </motion.div>
@@ -40,12 +40,12 @@ export default function JimmyChooSection() {
         >
           <div className="space-y-4">
             <span className="eyebrow !text-luxury-gold">A Unique Partnership</span>
-            <h2 className="font-display text-5xl md:text-7xl leading-tight">Jimmy <br /> <span className="italic">Choo</span></h2>
+            <h2 className="font-display text-5xl md:text-7xl leading-tight">Jimmy <br /> <span>Choo</span></h2>
             <div className="gold-rule" />
           </div>
 
           <div className="space-y-4 font-body text-lg text-white/70 leading-relaxed font-light">
-            <p>At The Bridal Courtyard, we love to help you pull your entire bridal look together. For us, that means show stopping shoes. Pull together your full look by trying on the Jimmy Choo bridal collection shoes with all of our gowns.</p>
+            <p>At The Bridal Courtyard, we love to help you style your entire bridal look. For us, that means show stopping shoes. Pull together your full look by trying on the Jimmy Choo bridal collection shoes with all of our gowns.</p>
             <p>If you love what you see, our friends at Jimmy Choo will then do the rest — taking great care of you at your own appointment. Is there anything more special than saying &lsquo;I do&rsquo; in Choo?</p>
           </div>
 

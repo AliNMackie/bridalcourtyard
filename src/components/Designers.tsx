@@ -40,7 +40,7 @@ export default function Designers() {
                 />
                 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-charcoal/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8">
+                <div className="absolute inset-0 bg-charcoal/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-8 backdrop-blur-sm">
                   <span className="text-white font-body text-[11px] uppercase tracking-[0.25em] border border-white/40 px-6 py-3 hover:bg-white hover:text-charcoal transition-all">
                     View Collection
                   </span>

@@ -25,13 +25,13 @@ export default function Footer() {
             <div className="flex flex-col space-y-3">
               <a 
                 href="tel:01412378680" 
-                className="text-white hover:text-luxury-gold hover:underline transition-all cursor-pointer"
+                className="text-white hover:text-duck-egg hover:underline transition-all cursor-pointer"
               >
                 0141 237 8680
               </a>
               <a 
                 href="mailto:info@bridalcourtyard.com" 
-                className="text-white hover:text-luxury-gold hover:underline transition-all cursor-pointer"
+                className="text-white hover:text-duck-egg hover:underline transition-all cursor-pointer"
               >
                 info@bridalcourtyard.com
               </a>

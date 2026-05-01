@@ -20,7 +20,7 @@ export default function BrandPhilosophy() {
             <span className="eyebrow !text-luxury-gold">Our Philosophy</span>
             <h2 className="font-display text-4xl md:text-5xl text-charcoal leading-tight">
               Confident & <br />
-              <span className="italic self-end font-serif">Prepared.</span>
+              <span className="self-end">Prepared.</span>
             </h2>
             <div className="gold-rule" />
           </div>
@@ -40,7 +40,7 @@ export default function BrandPhilosophy() {
             <span className="eyebrow !text-luxury-gold">Relevance</span>
             <h2 className="font-display text-4xl md:text-5xl text-charcoal leading-tight">
               Chic with <br />
-              <span className="italic font-serif">Attitude.</span>
+              <span>Attitude.</span>
             </h2>
             <div className="gold-rule" />
           </div>

@@ -26,7 +26,7 @@ export default function ReviewsSection() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-16 space-y-4">
           <span className="eyebrow !text-charcoal/60">What our brides say</span>
-          <h2 className="font-display text-4xl md:text-5xl text-charcoal">143 Five-Star Reviews on Google</h2>
+          <h2 className="font-display text-4xl md:text-5xl text-charcoal">Five-Star Reviews on Google</h2>
           <div className="w-16 h-[1px] bg-luxury-gold mx-auto mt-6" />
         </div>
 

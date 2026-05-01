@@ -99,7 +99,7 @@ export default function DesignerLayout({ name, description, persona, priceRange,
         <section className="bg-luxury-gray py-16 md:py-24 border-t border-gray-100">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-10 space-y-3">
-              <span className="eyebrow">The Collection</span>
+              <span className="eyebrow">Some of our favourite gowns</span>
               <div className="w-12 h-[1px] bg-luxury-gold mx-auto" />
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">

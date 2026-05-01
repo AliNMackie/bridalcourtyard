@@ -41,12 +41,12 @@ export default function DesignersPage() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <span className="text-[11px] uppercase tracking-[0.2em] text-luxury-gold font-medium">
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/40 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 drop-shadow-md">
+                    <span className="text-[11px] uppercase tracking-[0.2em] text-luxury-gold font-medium drop-shadow-sm">
                       {designer.eyebrow}
                     </span>
-                    <h3 className="font-display text-2xl text-white mt-1">
+                    <h3 className="font-display text-3xl text-white mt-1 drop-shadow-md">
                       {designer.name}
                     </h3>
                   </div>
