@@ -46,7 +46,7 @@ export default function DesignersPage() {
                     <span className="text-[11px] uppercase tracking-[0.2em] text-luxury-gold font-medium drop-shadow-sm">
                       {designer.eyebrow}
                     </span>
-                    <h3 className="font-display text-3xl text-duck-egg mt-1 drop-shadow-md">
+                    <h3 className="font-display text-3xl !text-duck-egg mt-1 drop-shadow-md">
                       {designer.name}
                     </h3>
                   </div>

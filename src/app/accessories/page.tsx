@@ -21,7 +21,7 @@ export default function AccessoriesPage() {
         />
         <div className="relative max-w-4xl mx-auto px-6 md:px-12 text-center space-y-8">
           <span className="eyebrow !text-luxury-gold">Complete Your Look</span>
-          <h1 className="font-display text-5xl md:text-7xl leading-tight">
+          <h1 className="font-display text-5xl md:text-7xl leading-tight text-white">
             Accessories
           </h1>
           <div className="gold-rule gold-rule-center" />
