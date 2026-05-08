@@ -46,6 +46,40 @@ export default function BoutiqueContent() {
           </motion.div>
         </div>
 
+        {/* Placeholder Image Grid for upcoming boutique photography */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mt-20 md:mt-32 max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative aspect-[3/4] bg-duck-egg overflow-hidden"
+          >
+            {/* TODO: Replace src with new boutique space photo once photoshoot is complete */}
+            <Image
+              src="/images/home/DSC06307.jpg"
+              alt="Bridal gown editorial photography (Placeholder for Boutique space)"
+              fill
+              className="object-cover hover:scale-105 transition-transform duration-1000"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="relative aspect-[3/4] bg-duck-egg overflow-hidden md:mt-24"
+          >
+            {/* TODO: Replace src with new boutique interior photo once photoshoot is complete */}
+            <Image
+              src="/images/home/DSC06414.jpg"
+              alt="Bridal gown editorial photography (Placeholder for Boutique interior)"
+              fill
+              className="object-cover hover:scale-105 transition-transform duration-1000"
+            />
+          </motion.div>
+        </div>
+
       </div>
     </Section>
   );

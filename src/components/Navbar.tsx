@@ -70,7 +70,15 @@ export default function Navbar() {
         >
           <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="relative flex items-center group">
+            <Link 
+              href="/" 
+              tabIndex={isHome && !isScrolled ? -1 : 0}
+              aria-hidden={isHome && !isScrolled}
+              className={cn(
+                "relative flex items-center group transition-opacity duration-500",
+                isHome && !isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
+              )}
+            >
               <Logo light={!showDark} className="scale-90 md:scale-100 origin-left" />
             </Link>
 
