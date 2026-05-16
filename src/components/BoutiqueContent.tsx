@@ -36,16 +36,7 @@ export default function BoutiqueContent() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-8 pt-6">
-                <div className="space-y-2">
-                  <span className="font-display text-3xl text-luxury-gold">Private</span>
-                  <p className="font-body text-xs uppercase tracking-widest text-charcoal/50">Consultations</p>
-                </div>
-                <div className="space-y-2">
-                  <span className="font-display text-3xl text-luxury-gold">Exclusive</span>
-                  <p className="font-body text-xs uppercase tracking-widest text-charcoal/50">Collections</p>
-                </div>
-              </div>
+
             </motion.div>
           </div>
 
