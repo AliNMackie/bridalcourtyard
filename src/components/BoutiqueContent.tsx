@@ -59,8 +59,8 @@ export default function BoutiqueContent() {
             >
               {/* TODO: Replace src with new boutique space photo once photoshoot is complete */}
               <Image
-                src="/images/home/DSC06307.jpg"
-                alt="Bridal gown editorial photography (Placeholder for Boutique space)"
+                src="/images/our-boutique/2026-05-28-8258.jpg"
+                alt="Bridal Courtyard Boutique space"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-1000"
               />
@@ -99,8 +99,8 @@ export default function BoutiqueContent() {
               >
                 {/* TODO: Replace src with new boutique interior photo once photoshoot is complete */}
                 <Image
-                  src="/images/home/DSC06414.jpg"
-                  alt="Bridal gown editorial photography (Placeholder for Boutique interior)"
+                  src="/images/our-boutique/2026-05-28-7990.jpg"
+                  alt="Bridal Courtyard Boutique interior"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-1000 object-[center_30%]"
                 />
