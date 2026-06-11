@@ -3,7 +3,7 @@
   publish = ".next"
 
 [context.production]
-  branch = "bridal-sandbox"
+  branch = "main"
 
 [context."feature/site-buildout"]
   command = "npm run build"
