@@ -20,7 +20,7 @@ export default function JimmyChooSection() {
           className="relative aspect-square border border-white/10 p-4 md:p-12 overflow-hidden order-2 md:order-1"
         >
            <Image 
-             src="/images/home/accessories/Window Choo Shoes.webp" 
+             src="/images/jimmy-choo/2026-05-28-8026.jpg" 
              alt="Jimmy Choo Bridal Detail"
              fill
              className="object-cover opacity-60 mix-blend-overlay"
