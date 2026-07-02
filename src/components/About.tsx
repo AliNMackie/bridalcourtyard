@@ -67,7 +67,7 @@ export default function About() {
           className="relative aspect-[3/4] bg-luxury-gray overflow-hidden shadow-2xl"
         >
           <Image
-            src="https://bridalcourtyard.com/wp-content/uploads/2022/09/WINDOW-683x1024.jpg"
+            src="/images/our-boutique/SOFA.jpg"
             alt="The Bridal Courtyard boutique at St Andrew's Square Glasgow"
             fill
             className="object-cover"
