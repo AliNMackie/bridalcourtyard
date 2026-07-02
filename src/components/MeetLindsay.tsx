@@ -21,7 +21,7 @@ export default function MeetLindsay() {
           className="relative aspect-[4/5] md:aspect-auto md:h-[600px] bg-duck-egg flex items-center justify-center shadow-xl order-2 md:order-1 overflow-hidden"
         >
           <Image
-            src="/images/Lindsay1.jpg"
+            src="/images/Lindsay2.jpg"
             alt="Lindsay, founder of The Bridal Courtyard"
             fill
             className="object-cover"
