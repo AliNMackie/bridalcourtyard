@@ -53,7 +53,7 @@ export default function Navbar() {
         {/* Announcement Bar */}
         <div className="bg-duck-egg w-full py-2 px-4 text-center border-b border-luxury-gold/10">
           <p className="font-body text-[10px] md:text-xs uppercase tracking-[0.15em] text-charcoal">
-            Glasgow&apos;s Premier Bridal Boutique &middot; 48 St Andrew&apos;s Square &middot; <a href="tel:01412378680" className="hover:underline hover:text-charcoal/60 transition-colors">0141 237 8680</a>
+            Holiday Notice: Closed 12th July – 2nd August. Responses will be delayed, but we will get back to you ASAP. Thank you!
           </p>
         </div>
 

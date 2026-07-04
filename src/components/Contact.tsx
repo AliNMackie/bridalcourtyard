@@ -86,6 +86,15 @@ export default function Contact() {
                   We operate on a strictly appointment-only basis to ensure every bride has our undivided attention. 
                 </p>
               </div>
+
+              {/* Holiday Notice */}
+              <div className="bg-white/80 p-6 border-l-[3px] border-luxury-gold text-left my-6 max-w-sm mx-auto shadow-sm">
+                <p className="font-display text-base italic text-charcoal">Holiday Notice: 12th July – 2nd August</p>
+                <p className="font-body text-xs text-charcoal/70 mt-2 leading-relaxed">
+                  Please note: The boutique will be closed for holidays from 12th July to 2nd August. 
+                  There will be a delay in getting back to you, but we will get back to you as soon as possible. Thank you for your patience.
+                </p>
+              </div>
               
               <Link
                 href="/contact"
