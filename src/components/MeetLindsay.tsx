@@ -22,7 +22,7 @@ export default function MeetLindsay() {
         >
           <Image
             src="/images/Lindsay2.jpg"
-            alt="Lindsay, founder of The Bridal Courtyard"
+            alt="Lindsay, owner of The Bridal Courtyard"
             fill
             className="object-cover"
             priority
@@ -45,7 +45,7 @@ export default function MeetLindsay() {
               Lindsay
             </h2>
             <p className="font-body text-[12px] uppercase tracking-[0.2em] text-luxury-gold font-medium">
-              Founder & Lead Stylist
+              Owner
             </p>
             <div className="w-16 h-[1px] bg-luxury-gold" />
           </div>
