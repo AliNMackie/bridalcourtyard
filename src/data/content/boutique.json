@@ -1,0 +1,23 @@
+{
+  "title": "OUR BOUTIQUE",
+  "subtitle": "A Private Haven in Glasgow City Centre",
+  "intro": "The Bridal Courtyard is designed as an intimate single-appointment boutique where you receive 100% of our attention.",
+  "paragraphs": [
+    "Located at 152 West Regent Street, our boutique offers a calm, welcoming environment away from the bustle of the high street.",
+    "During your private appointment, the boutique is closed strictly to everyone except you and your guests. Enjoy complimentary drinks, relax, and explore our collection at your own pace."
+  ],
+  "highlights": [
+    {
+      "title": "Exclusive Appointments",
+      "description": "One bride at a time in our private fitting room suite."
+    },
+    {
+      "title": "Curated Couture",
+      "description": "Hand-selected gowns from premier international designers."
+    },
+    {
+      "title": "Personal Styling",
+      "description": "Expert advice from experienced bridal stylists."
+    }
+  ]
+}

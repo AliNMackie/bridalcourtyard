@@ -6,6 +6,7 @@ import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Logo from "@/components/ui/Logo";
+import homepageData from "@/data/content/homepage.json";
 
 export default function Hero() {
   return (
@@ -58,7 +59,7 @@ export default function Hero() {
             transition={{ duration: 1.5, delay: 1.2 }}
             className="text-lg md:text-xl font-body font-light text-white/80 mb-12 max-w-lg mx-auto leading-relaxed tracking-wide"
           >
-            For the chic bride with attitude. Intuitive styling, zero pressure, and dresses you never knew you&apos;d love.
+            {homepageData?.hero?.subheading || "For the chic bride with attitude. Intuitive styling, zero pressure, and dresses you never knew you'd love."}
           </motion.p>
 
           <motion.div
@@ -70,7 +71,7 @@ export default function Hero() {
               href="#contact"
               className="inline-flex items-center gap-4 border border-white text-white px-12 py-5 text-[13px] uppercase tracking-[0.3em] font-light hover:bg-white hover:text-charcoal transition-all duration-700 group backdrop-blur-sm"
             >
-              Book Appointment <MoveRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-500" />
+              {homepageData?.hero?.buttonText || "Book Appointment"} <MoveRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-500" />
             </Link>
           </motion.div>
         </div>

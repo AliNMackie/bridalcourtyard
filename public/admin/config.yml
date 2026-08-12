@@ -10,8 +10,139 @@ local_backend: true
 
 collections:
   - name: "site_content"
-    label: "Site Content"
+    label: "Site Content Pages & Settings"
     files:
+      - label: "Global Settings & Announcement Banner"
+        name: "site_settings"
+        file: "src/data/content/site_settings.json"
+        description: "Configure announcement banner, contact info, and site settings"
+        widget: "object"
+        fields:
+          - label: "Announcement Banner"
+            name: "announcement"
+            widget: "object"
+            fields:
+              - { label: "Enable Announcement Banner", name: "enabled", widget: "boolean", default: false }
+              - { label: "Banner Text", name: "text", widget: "string", required: false }
+          - label: "Contact Details"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Phone Number", name: "phone", widget: "string" }
+              - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Address", name: "address", widget: "string" }
+              - { label: "Opening Hours", name: "hours", widget: "string" }
+          - label: "Social Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook URL", name: "facebook", widget: "string" }
+              - { label: "Instagram URL", name: "instagram", widget: "string" }
+
+      - label: "Homepage"
+        name: "homepage"
+        file: "src/data/content/homepage.json"
+        description: "Manage Hero, About, and Meet Lindsay sections on the homepage"
+        widget: "object"
+        fields:
+          - label: "Hero Banner Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow Text", name: "eyebrow", widget: "string" }
+              - { label: "Main Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+          - label: "About Experience Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "First Paragraph", name: "paragraph1", widget: "text" }
+              - { label: "Second Paragraph", name: "paragraph2", widget: "text" }
+          - label: "Meet Lindsay Section"
+            name: "lindsay"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Subtitle / Role", name: "subtitle", widget: "string" }
+              - { label: "Biography", name: "bio", widget: "text" }
+
+      - label: "Our Boutique Page"
+        name: "boutique"
+        file: "src/data/content/boutique.json"
+        description: "Manage Our Boutique page intro and features"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Introductory Text", name: "intro", widget: "text" }
+          - label: "Story Paragraphs"
+            name: "paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - label: "Highlights"
+            name: "highlights"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+      - label: "Accessories Page"
+        name: "accessories"
+        file: "src/data/content/accessories.json"
+        description: "Manage Accessories page copy"
+        widget: "object"
+        fields:
+          - label: "Hero Header"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Sections"
+            name: "sections"
+            widget: "object"
+            fields:
+              - label: "Jimmy Choo Section"
+                name: "jimmyChoo"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Veils Section"
+                name: "veils"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+      - label: "Contact & Booking Page"
+        name: "contact"
+        file: "src/data/content/contact.json"
+        description: "Manage Contact form header, appointment guide, and fee notes"
+        widget: "object"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Guide Title", name: "guideTitle", widget: "string" }
+          - label: "Step-by-Step Instructions"
+            name: "steps"
+            widget: "list"
+            field: { label: "Instruction Step", name: "step", widget: "string" }
+          - { label: "Fee / Policy Note", name: "feeNote", widget: "string" }
+
+      - label: "Reviews Page"
+        name: "your_views"
+        file: "src/data/content/your_views.json"
+        description: "Manage Reviews / Your Views header text"
+        widget: "object"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Introductory Text", name: "intro", widget: "text" }
+
       - label: "FAQs"
         name: "faqs"
         file: "src/data/content/faqs.json"

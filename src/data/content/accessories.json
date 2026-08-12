@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "title": "ACCESSORIES & FINISHING TOUCHES",
+    "subtitle": "Complete your look with our curated collection of veils, headpieces, and footwear."
+  },
+  "sections": {
+    "jimmyChoo": {
+      "title": "JIMMY CHOO BRIDAL FOOTWEAR",
+      "description": "Exclusively available in boutique to complement our couture gown collections."
+    },
+    "veils": {
+      "title": "COUTURE VEILS & HEADPIECES",
+      "description": "Custom length veils, delicate hair accessories, and statement jewelry to elevate your bridal vision."
+    }
+  }
+}

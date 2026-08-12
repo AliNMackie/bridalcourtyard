@@ -1,0 +1,16 @@
+{
+  "announcement": {
+    "enabled": false,
+    "text": "Welcome to The Bridal Courtyard. Private appointments available."
+  },
+  "contact": {
+    "phone": "0141 237 7020",
+    "email": "lindsay@bridal-courtyard.co.uk",
+    "address": "152 West Regent Street, Glasgow G2 2RQ",
+    "hours": "By Appointment Only"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/bridalcourtyard/",
+    "instagram": "https://www.instagram.com/bridalcourtyard/"
+  }
+}

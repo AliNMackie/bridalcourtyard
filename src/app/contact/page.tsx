@@ -80,13 +80,7 @@ export default function ContactPage() {
               <h2 className="font-display text-3xl md:text-4xl text-charcoal uppercase">Request an Appointment</h2>
               
               {/* Holiday Notice */}
-              <div className="bg-luxury-gray p-6 border-l-[3px] border-luxury-gold text-left my-6">
-                <p className="font-display text-lg italic text-charcoal">Holiday Notice: 12th July – 2nd August</p>
-                <p className="font-body text-sm text-charcoal/70 mt-2 leading-relaxed">
-                  Please note: The boutique will be closed for holidays from 12th July to 2nd August. 
-                  There will be a delay in getting back to you, but we will get back to you as soon as possible. Thank you for your patience.
-                </p>
-              </div>
+              
 
               <div className="space-y-4 font-body text-[13px] md:text-[14px] text-charcoal/80 leading-relaxed">
                 <p className="font-medium text-charcoal uppercase tracking-widest text-[11px] mb-4">

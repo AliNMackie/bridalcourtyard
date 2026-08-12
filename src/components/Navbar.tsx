@@ -8,6 +8,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import Logo from "./ui/Logo";
+import siteSettingsData from "@/data/content/site_settings.json";
 
 const NAV_LINKS = [
   { href: "/our-boutique", label: "Our Boutique" },
@@ -50,13 +51,14 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-50 transition-all duration-500">
-        {/* Announcement Bar */}
-        <div className="bg-duck-egg w-full py-2 px-4 text-center border-b border-luxury-gold/10">
-          <p className="font-body text-[10px] md:text-xs uppercase tracking-[0.15em] text-charcoal">
-            Holiday Notice: Closed 12th July – 2nd August. Responses will be delayed, but we will get back to you ASAP. Thank you!
-          </p>
-        </div>
-
+        {/* Dynamic Announcement Bar */}
+        {siteSettingsData?.announcement?.enabled && (
+          <div className="bg-duck-egg w-full py-2 px-4 text-center border-b border-luxury-gold/10">
+            <p className="font-body text-[10px] md:text-xs uppercase tracking-[0.15em] text-charcoal">
+              {siteSettingsData.announcement.text}
+            </p>
+          </div>
+        )}
         {/* Main Nav */}
         <div 
           className={cn(
