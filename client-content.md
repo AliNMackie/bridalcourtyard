@@ -167,10 +167,6 @@ For the chic and elegant bride with attitude.  We are here to do right by you a
 
 [ANNE BARGE](https://bridalcourtyard.com/anne-barge/)
 
-![A woman wearing a beautiful white dress standing on a roof top](https://bridalcourtyard.com/wp-content/uploads/2023/11/Celine-09.jpg_1699375882-200x300.jpeg)
-
-[Alyssa Kristin](https://bridalcourtyard.com/alyssa-kristin)
-
 ![ACCESSORIES](https://bridalcourtyard.com/wp-content/uploads/2024/01/Reposta_387052525_18050073055496294_8658166278-240x300.jpg)
 
 [ACCESSORIES](https://bridalcourtyard.com/accessories/)
@@ -536,51 +532,7 @@ Anne Barge
 
 # Page: Unknown URL
 
-[Skip to content](https://bridalcourtyard.com/alyssa-kristin/#jupiterx-main)
 
-# Alyssa Kristin
-
-ALYSSA KRISTIN
-
-The Bridal Courtyard are exclusive stockists of Alyssa Kristin in Scotland.
-
-Made with love in Chicago, the Alyssa Kristin collection is renowned for being considered and versatile.  Soft structure, intended minimalism and stunning fabrics, each bride can choose to customise with splits, buttons, sleeve and skirt options, creating the gown that represents exactly who she is.
-
-The Alyssa Kristin bride is confident and fashion forward.  She loves attention to detail and want to wear her gown, her way.
-
-Visit – [https://www.alyssakristin.com/](https://www.alyssakristin.com/)
-
-Prices – £2700 – £3200
-
-Check out some of our favourite pieces below
-
-### MAKE AN APPOINTMENT TO VIEW OUR ENTIRE COLLECTION
-
-[![Gemma Nov 23. v2](https://bridalcourtyard.com/wp-content/uploads/2023/11/Gemma-Nov-23.-v2.jpg)](https://bridalcourtyard.com/wp-content/uploads/2023/11/Gemma-Nov-23.-v2.jpg)
-
-#### ALYSSA KRISTIN
-
-ALYSSA KRISTIN
-
-[![Bianca Nov 23](https://bridalcourtyard.com/wp-content/uploads/2023/11/Bianca-Nov-23-scaled.jpg)](https://bridalcourtyard.com/wp-content/uploads/2023/11/Bianca-Nov-23-scaled.jpg)
-
-#### ALYSSA KRISTIN
-
-ALYSSA KRISTIN
-
-[![Alyssa Kristin](https://bridalcourtyard.com/wp-content/uploads/2023/11/Celine-Nov-23.jpg)](https://bridalcourtyard.com/wp-content/uploads/2023/11/Celine-Nov-23.jpg)
-
-#### ALYSSA KRISTIN
-
-ALYSSA KRISTIN
-
-[![Alyssa Kristin](https://bridalcourtyard.com/wp-content/uploads/2023/11/Margot-Nov-23.jpg)](https://bridalcourtyard.com/wp-content/uploads/2023/11/Margot-Nov-23.jpg)
-
-#### ALYSSA KRISTIN
-
-ALYSSA KRISTIN
-
----
 
 
 # Page: Unknown URL
@@ -590,10 +542,6 @@ ALYSSA KRISTIN
 # DESIGNERS
 
 ## DESIGNER Collection
-
-![A woman wearing a beautiful white dress standing on a roof top](https://bridalcourtyard.com/wp-content/uploads/2023/11/Celine-09.jpg_1699375882-200x300.jpeg)
-
-[Alyssa Kristin](https://bridalcourtyard.com/alyssa-kristin)
 
 ![A woman standing wearing a gown](https://bridalcourtyard.com/wp-content/uploads/2023/08/TRUVELLE-FP-1-200x300.jpg)
 
@@ -739,8 +687,6 @@ Would thoroughly recommend The Bridal Courtyard. Lindsay and Simone are absolute
 
 
 # Page: Unknown URL
-
-[Skip to content](https://bridalcourtyard.com/alyssa-kristin-2/#jupiterx-main)
 
 # Aesling
 

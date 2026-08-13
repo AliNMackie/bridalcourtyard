@@ -13,7 +13,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "The Bridal Courtyard | Luxury Bridal Boutique Glasgow | Designer Wedding Gowns",
-  description: "Glasgow's premier bridal boutique in the historic St Andrew's Square. Exclusive designer collections including Justin Alexander Signature, Truvelle, and Alyssa Kristin. Book your private appointment today.",
+  description: "Glasgow's premier bridal boutique in the historic St Andrew's Square. Exclusive designer collections including Justin Alexander Signature and Truvelle. Book your private appointment today.",
 };
 
 export default function Home() {

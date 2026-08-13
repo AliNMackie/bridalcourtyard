@@ -20,7 +20,21 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       }
-    ],
+    ]
+  },
+  async redirects() {
+    return [
+      {
+        source: '/alyssa-kristin',
+        destination: '/designers',
+        permanent: true,
+      },
+      {
+        source: '/alyssa-kristin-2',
+        destination: '/designers',
+        permanent: true,
+      },
+    ];
   },
 };
 

@@ -40,16 +40,7 @@ export const DESIGNERS = [
     externalLink: "https://www.annebarge.com/collections/blue-willow",
     image: "/images/home/anne-barge/anne-barge.jpg"
   },
-  {
-    slug: "alyssa-kristin",
-    name: "Alyssa Kristin",
-    eyebrow: "Sleek & Statement",
-    description: "Alyssa Kristin gowns are designed to celebrate the female form. Known for their incredible fit and stunning crepe fabrics, these dresses are for the bride who wants a sleek, confident, and sexy look.",
-    persona: "The confident muse—daring, sleek, and undeniably stunning.",
-    priceRange: "£2,400 - £3,800",
-    externalLink: "https://www.alyssakristin.com/",
-    image: "/images/home/alyssa-kristin/alyssa-kristin-m.jpg"
-  },
+
   {
     slug: "laudae",
     name: "LAUDAE",

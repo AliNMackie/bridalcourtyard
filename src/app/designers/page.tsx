@@ -7,7 +7,7 @@ import { MoveRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Our Designers | Luxury Bridal Collections Glasgow | The Bridal Courtyard",
-  description: "Explore our curated collection of world-class bridal designers including Justin Alexander Signature, Truvelle, Aesling, Anne Barge, Alyssa Kristin, and LAUDAE.",
+  description: "Explore our curated collection of world-class bridal designers including Justin Alexander Signature, Truvelle, Aesling, Anne Barge, and LAUDAE.",
 };
 
 export default function DesignersPage() {
@@ -28,16 +28,9 @@ export default function DesignersPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-            {DESIGNERS.map((designer, index) => {
-              // Asymmetric row split for 7 items:
-              // Row 1 (3 items): lg:col-span-4 (3 x 4 = 12 columns)
-              // Row 2 (4 items): lg:col-span-3 (4 x 3 = 12 columns)
-              // Tablet (2 items per row): index 6 (7th item) spans full 12 columns for balance.
-              const colSpan = index < 3 
-                ? "md:col-span-6 lg:col-span-4" 
-                : index === 6 
-                  ? "md:col-span-12 lg:col-span-3" 
-                  : "md:col-span-6 lg:col-span-3";
+            {DESIGNERS.map((designer) => {
+              // Clean 2x3 grid for 6 items (3 columns per row on desktop, 2 per row on tablet)
+              const colSpan = "md:col-span-6 lg:col-span-4";
 
               return (
                 <Link
